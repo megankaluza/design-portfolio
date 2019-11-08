@@ -1,4 +1,4 @@
-# _Personal Portfolio_
+# _Design Portfolio_
 
 #### By _**Megan Kaluza**_
 
