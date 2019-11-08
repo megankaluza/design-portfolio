@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap|Molle:400i|Sedgwick+Ave+Display&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#imageFashion,
+#imageExodus,
+#imageTerraForma,
+#imageFeralBlack,
+#imageFeralWhite,
+#imageTumblr,
+#imageAdidas,
+#imageMobile,
+#imageAesthetic,
+#imageInsta,
+#imageSpecialist,
+#imageSpecialistBlack, .columns, .gallery {
+  display: flex; }
+
+.contact, #footer-title, h3.title, .intro, .label {
+  text-align: center; }
+
+#imageFashion,
+#imageExodus,
+#imageTerraForma,
+#imageFeralBlack,
+#imageFeralWhite,
+#imageTumblr,
+#imageAdidas,
+#imageMobile,
+#imageAesthetic,
+#imageInsta,
+#imageSpecialist,
+#imageSpecialistBlack {
+  opacity: .5; }
+
+#imageFashion,
+#imageExodus,
+#imageTerraForma,
+#imageFeralBlack,
+#imageFeralWhite,
+#imageTumblr,
+#imageAdidas,
+#imageMobile,
+#imageAesthetic,
+#imageInsta,
+#imageSpecialist,
+#imageSpecialistBlack {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+#imageFashion,
+#imageExodus,
+#imageTerraForma,
+#imageFeralBlack,
+#imageFeralWhite,
+#imageTumblr,
+#imageAdidas,
+#imageMobile,
+#imageAesthetic,
+#imageInsta,
+#imageSpecialist,
+#imageSpecialistBlack {
+  align-items: center;
+  justify-content: center; }
+
+.exit, .about-me, .case-study, .landing-content, .savvy {
+  display: block;
+  margin: 0 auto; }
+
+h4,
+h5 {
+  font-family: "Cabin", sans-serif;
+  font-variant: small-caps;
+  text-align: center; }
+
+h4 {
+  color: #000000;
+  font-size: 2em;
+  padding: .5em; }
+
+.create {
+  width: 100%;
+  height: 100%; }
+
+.exit {
+  width: 30px; }
+
+.modal {
+  display: none; }
+  .modal .image {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+
+.landing-footer {
+  font-size: 2em;
+  padding-top: 5em; }
+
+#footer {
+  font-size: 1.5em;
+  padding-top: 1em; }
+
+#footer a:hover {
+  color: #000000; }
+
+#footer-title {
+  color: #FFFFFF;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 1em; }
+
+header {
+  position: fixed;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  z-index: 100; }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    background-color: transparent; }
+
+.nav [type=checkbox] {
+  display: none; }
+
+.list-none {
+  list-style: none; }
+
+.floating-li > li {
+  display: inline-block; }
+
+.hamburger {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  transition: background 0.3s; }
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #000000; }
+
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  content: ""; }
+
+.hamburger span::before {
+  top: -6px; }
+
+.hamburger span::after {
+  bottom: -6px; }
+
+/** Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+* down to center and transform into an "x". */
+.hamburger--htx {
+  background-color: transparent; }
+
+.hamburger--htx span {
+  transition: background 0s 0.3s; }
+
+.hamburger--htx span::before,
+.hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s; }
+
+.hamburger--htx span::before {
+  transition-property: top, transform; }
+
+.hamburger--htx span::after {
+  transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+[type=checkbox]:checked ~ label {
+  background-color: rgba(0, 0, 0, 0); }
+
+[type=checkbox]:checked ~ label span {
+  background: none; }
+
+[type=checkbox]:checked ~ label span::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+[type=checkbox]:checked ~ label span::after {
+  bottom: 0;
+  transform: rotate(-45deg); }
+
+[type=checkbox]:checked ~ label span::before,
+[type=checkbox]:checked ~ label span::after {
+  transition-delay: 0.3s, 0.3s; }
+
+.menu {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  margin: 0;
+  padding: 0 42px;
+  transform: scale(1, 0);
+  transform-origin: top center;
+  transition: transform 0.65s; }
+
+.menu a {
+  font-size: 2.7em;
+  color: #000000; }
+  .menu a:hover {
+    color: #E71D36; }
+
+.menu li {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-variant: small-caps;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 4em; }
+  .menu li:first-child {
+    margin-top: 42px; }
+
+.menu li:last-child {
+  border-bottom: none; }
+
+[type=checkbox]:checked ~ label ~ .menu {
+  transform: scale(1);
+  animation-name: slide-down;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; }
+
+[type=checkbox]:checked ~ label ~ .menu li {
+  opacity: 1;
+  transition-delay: 1.05s;
+  transition-delay: 0.75s; }
+
+.content-section {
+  min-height: 70vh;
+  padding: 2em 1em; }
+
+.article {
+  width: 100%;
+  max-width: 70em; }
+
+@media (min-width: 700px) {
+  .article {
+    column-count: 2;
+    column-gap: 4%; } }
+@media (min-width: 1000px) {
+  .article {
+    column-count: 3;
+    column-gap: 1%; } }
+@keyframes slide-down {
+  0% {
+    transform: scale(1, 0); }
+  100% {
+    transform: scale(1, 1); } }
+@keyframes imitate-video {
+  0%, 100% {
+    transform: scale(1) translate(-50%, -50%); }
+  40% {
+    transform: scale(1.05) translate(-50.5%, -49.75%); }
+  60% {
+    transform: scale(1.09) translate(-48%, -48%); } }
+.fscreen {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 2em; }
+
+.fscreen-title {
+  position: relative;
+  top: 30%;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+
+@keyframes slide-title-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50vh); }
+  50% {
+    opacity: 0;
+    transform: translateY(50vh); }
+  80% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+body {
+  width: 100%; }
+
+h3 {
+  font-size: 2.5em;
+  font-family: "Sedgwick Ave Display", cursive;
+  padding: 2em; }
+
+h3 a {
+  color: #000000; }
+  h3 a:hover {
+    color: #E71D36; }
+
+h3.signature {
+  color: #FFFFFF;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 7em; }
+
+h3.title {
+  padding: .5em; }
+
+p {
+  padding: 1.5em; }
+
+span {
+  color: #E71D36; }
+
+.bold,
+.bolder {
+  font-family: "Sedgwick Ave Display", cursive; }
+
+.bolder {
+  font-size: 5.5em;
+  color: #E71D36; }
+
+.fullscreen-bg {
+  opacity: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.about-me {
+  font-size: 2em; }
+
+.back a {
+  color: #000000;
+  font-size: 2em;
+  position: fixed;
+  right: 2em;
+  top: 50%;
+  left: 5%;
+  z-index: 100; }
+
+.content {
+  height: 100vh; }
+
+.case-study {
+  width: 55%;
+  height: 100%; }
+
+.container {
+  display: flex-inline; }
+
+.date {
+  top: 30%;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+
+.enter a {
+  position: relative;
+  left: 2em;
+  top: 50%; }
+
+.landing-content {
+  border: 8px solid #000000;
+  width: 690px;
+  height: 690px;
+  padding-top: 4em; }
+
+.grow {
+  width: 10%;
+  transition: all .2s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.1); }
+
+.image {
+  width: 90%; }
+
+.intro {
+  border-bottom: 1px solid #000000;
+  background-color: #FFFFFF;
+  height: 30%; }
+
+.label {
+  background: #c0c0c0;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+  .label a {
+    color: #FFFFFF; }
+  .label h3 {
+    color: #FFFFFF; }
+
+.margin {
+  margin-bottom: 3em; }
+
+.menu {
+  opacity: 95%; }
+
+.name {
+  color: #000000;
+  font-size: 3em; }
+
+.open {
+  transition: all .2s ease-in-out; }
+  .open:hover {
+    transform: scale(1.1); }
+
+img.open {
+  width: 130px; }
+
+.plus-minus {
+  padding: 1em; }
+  .plus-minus li a {
+    color: #FFFFFF;
+    font-size: 2em; }
+
+.plus-minus li a {
+  color: #FFFFFF;
+  font-size: 2em; }
+
+.savvy {
+  padding: 1em;
+  width: 60%; }
+
+.social {
+  width: 100px; }
+
+.vertical-text {
+  color: #E71D36;
+  display: inline-block;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 2em;
+  transform: rotate(-280deg); }
+
+.column {
+  width: 200px;
+  border: 5px solid #FFFFFF;
+  background: #000000;
+  flex: .2; }
+
+.mainColumn {
+  flex: 2; }
+
+.box {
+  width: 25%;
+  height: 500px;
+  flex-grow: 1; }
+
+.gallery {
+  flex-wrap: wrap;
+  -webkit-filter: grayscale(100%); }
+  .gallery:hover {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0%); }
+
+#imageFashion:hover,
+#imageExodus:hover,
+#imageTerraForma:hover,
+#imageFeralBlack:hover,
+#imageFeralWhite:hover,
+#imageTumblr:hover,
+#imageAdidas:hover,
+#imageMobile:hover,
+#imageAesthetic:hover,
+#imageInsta:hover,
+#imageSpecialist:hover,
+#imageSpecialistBlack:hover {
+  opacity: 1; }
+
+#imageFashion {
+  background-image: url("../img/ferris-wheel.jpg"); }
+
+#imageExodus {
+  background-image: url("../img/ferris-wheel.jpg"); }
+
+#imageTerraForma {
+  background-image: url("../img/ferris-wheel.jpg"); }
+
+#imageFeralBlack {
+  background-image: url("../img/feral-black.png"); }
+
+#imageFeralWhite {
+  background-image: url("../img/feral-white.png"); }
+
+#imageTumblr {
+  background-image: url("../img/tumblr.png"); }
+
+#imageAdidas {
+  background-image: url("../img/adidas.png"); }
+
+#imageMobile {
+  background-image: url("../img/mobile.png"); }
+
+#imageAesthetic {
+  background-image: url("../img/fashion-mock-up.png"); }
+
+#imageInsta {
+  background-image: url("../img/ig.png"); }
+
+#imageSpecialist {
+  background-image: url("../img/hybrid-white.png"); }
+
+#imageSpecialistBlack {
+  background-image: url("../img/hybrid-cloud-specialist.png"); }
+
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+  .content {
+    height: 800px; }
+
+  .menu {
+    height: 800px; } }
+@media only screen and (min-width: 667px) and (max-width: 768px) {
+  .content {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+
+  .menu {
+    height: 1000px; }
+
+  .ui.modal {
+    width: 88%; } }
+@media only screen and (max-width: 415px) {
+  h3 {
+    font-size: 1.5em; }
+
+  .about-me {
+    font-size: 12px; }
+
+  .case-study {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .gallery .box {
+    width: 100%;
+    height: 500px;
+    background-size: contain; }
+
+  .landing-content {
+    width: 300px;
+    height: 400px; }
+
+  .landing-footer {
+    font-size: 13px;
+    padding-top: 10.6em; }
+
+  .content-section {
+    padding-top: 8em; }
+
+  h3.signature {
+    font-size: 1.2em;
+    padding-top: 7em; }
+
+  .menu {
+    height: 580px; }
+
+  .menu li {
+    font-size: 10px;
+    padding: 3.5em; }
+
+  .modal {
+    width: 100%; }
+
+  .name {
+    color: #E71D36;
+    font-size: 1.6em; }
+
+  .wrapper {
+    margin: 0 auto; } }
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto; } }
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,472 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap|Molle:400i|Sedgwick+Ave+Display&display=swap');
+
+// Sass Components
+@import "base/index";
+
+body {
+  width: 100%;
+}
+
+// Typography
+h3 {
+  font-size: 2.5em;
+  font-family: $stack-sedgwick;
+  padding: 2em;
+}
+
+h3 a {
+  color: $black;
+  &:hover {
+    color: $madder;
+  }
+}
+
+h3.signature {
+  color: $white;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 7em;
+}
+
+h3.title {
+  padding: .5em;
+  @extend %centered;
+}
+
+p {
+  padding: 1.5em;
+}
+
+span {
+  color: $madder;
+}
+
+.bold,
+.bolder {
+  font-family: $stack-sedgwick;
+}
+
+.bolder {
+  font-size: 5.5em;
+  color: $madder;
+}
+
+// Video
+.fullscreen-bg {
+  opacity: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+// About
+.about-me {
+  @extend %block;
+  font-size: 2em;
+  // padding: 5.8em;
+}
+
+.back a {
+  color: $black;
+  font-size: 2em;
+  position: fixed;
+  right: 2em;
+  top: 50%;
+  left: 5%;
+  z-index: 100;
+}
+
+.content {
+  // @extend %block;
+  // width: 920px;
+  height: 100vh;
+}
+
+// Fashion Page
+.case-study {
+  @extend %block;
+  width: 55%;
+  height: 100%;
+}
+
+// .center {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.container {
+  display: flex-inline;
+}
+
+// .credentials {
+//   @extend %block;
+//   padding-bottom: 1em;
+//   width: 45%;
+// }
+
+// Landing Page
+.date {
+  // position: absolute;
+  top: 30%;
+  // right: 30%;
+  // animation: slide-title-in;
+  // animation-duration: 2000ms;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
+}
+
+.enter a {
+  position: relative;
+  left: 2em;
+  top: 50%;
+}
+
+.landing-content {
+  border: 8px solid $black;
+  @extend %block;
+  width: 690px;
+  height: 690px;
+  padding-top: 4em;
+}
+
+// All
+.grow {
+  width: 10%;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// .icon {
+//   margin: 1em;
+//   width: 3em;
+// }
+
+.image {
+  width: 90%;
+}
+
+.intro {
+  @extend %centered;
+  border-bottom: 1px solid $black;
+  background-color: $white;
+  height: 30%;
+}
+
+.label {
+  @extend %centered;
+  background: $silver;
+  // background-image: url('#{$path-img}/black-bubbles.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  // border-bottom: 2px solid $black;
+  // border-top: 2px solid $black;
+  a {
+    color: $white;
+  }
+  h3 {
+    color: $white;
+  }
+}
+
+.margin {
+  margin-bottom: 3em;
+}
+
+// Nav
+.menu {
+  opacity: 95%;
+}
+
+.name {
+  color: $black;
+  font-size: 3em;
+}
+
+.open {
+  // width: 5em;
+  // font-size: 200px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+img.open {
+  width: 130px;
+}
+
+.plus-minus {
+  padding: 1em;
+  li a {
+    color: $white;
+    font-size: 2em;
+  }
+}
+
+.plus-minus li a {
+  color: $white;
+  font-size: 2em;
+}
+
+.savvy {
+  @extend %block;
+  padding: 1em;
+  width: 60%;
+}
+
+.social {
+  // margin: 1.3em .2em;
+  // width: 1.2em;
+  width: 100px;
+}
+
+.vertical-text {
+  color: $madder;
+  display: inline-block;
+  font-family: $stack-sedgwick;
+  font-size: 2em;
+  transform: rotate(-280deg);
+}
+
+// Columns
+.columns {
+  @extend %flex;
+}
+
+.column {
+  width: 200px;
+  border: 5px solid $white;
+  background: $black;
+  flex: .2;
+}
+
+.mainColumn {
+  flex: 2;
+}
+
+// Gallery
+.box {
+  width: 25%;
+  height: 500px;
+  flex-grow: 1;
+}
+
+.gallery {
+  @extend %flex;
+  // flex-basis: 0;
+  flex-wrap: wrap;
+  -webkit-filter: grayscale(100%);
+  &:hover {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+  }
+}
+
+#imageFashion,
+#imageExodus,
+#imageTerraForma,
+#imageFeralBlack,
+#imageFeralWhite,
+#imageTumblr,
+#imageAdidas,
+#imageMobile,
+#imageAesthetic,
+#imageInsta,
+#imageSpecialist,
+#imageSpecialistBlack {
+  @extend %align;
+  @extend %image;
+  @extend %opacity;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#imageFashion {
+  background-image: url('#{$path-img}/ferris-wheel.jpg');
+}
+
+#imageExodus {
+  background-image: url('#{$path-img}/ferris-wheel.jpg');
+}
+
+#imageTerraForma {
+  background-image: url('#{$path-img}/ferris-wheel.jpg');
+}
+
+#imageFeralBlack {
+  background-image: url('#{$path-img}/feral-black.png');
+}
+
+#imageFeralWhite {
+  background-image: url('#{$path-img}/feral-white.png');
+}
+
+#imageTumblr {
+  background-image: url('#{$path-img}/tumblr.png');
+}
+
+#imageAdidas {
+  background-image: url('#{$path-img}/adidas.png');
+}
+
+#imageMobile {
+  background-image: url('#{$path-img}/mobile.png');
+}
+
+#imageAesthetic {
+  background-image: url('#{$path-img}/fashion-mock-up.png');
+}
+
+#imageInsta {
+  background-image: url('#{$path-img}/ig.png');
+}
+
+#imageSpecialist {
+  background-image: url('#{$path-img}/hybrid-white.png');
+}
+
+#imageSpecialistBlack {
+  background-image: url('#{$path-img}/hybrid-cloud-specialist.png');
+}
+
+// Media Queries
+@media only screen and
+(min-width: 1024px)
+and (max-width: 1025px) {
+  .content {
+    height: 800px;
+  }
+
+  .menu {
+    height: 800px;
+  }
+}
+
+@media only screen and
+(min-width: 667px)
+and (max-width: 768px) {
+  .content {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .menu {
+    height: 1000px;
+  }
+
+  //Modal//
+  .ui.modal {
+    width: 88%;
+  }
+}
+
+@media only screen
+and (max-width: 415px) {
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .about-me {
+    font-size: 12px;
+  }
+
+  .case-study {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // height: 100vh;
+  }
+
+  // .date {
+  //   top: 20%;
+  // }
+
+  .gallery .box {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+  }
+
+  .landing-content {
+    // padding-top: 10em;
+    width: 300px;
+    height: 400px;
+  }
+
+  .landing-footer {
+    font-size: 13px;
+    padding-top: 10.6em;
+  }
+
+  .content-section {
+    padding-top: 8em;
+  }
+
+  h3.signature {
+    font-size: 1.2em;
+    padding-top: 7em;
+  }
+
+  .menu {
+    height: 580px;
+  }
+
+  .menu li {
+    font-size: 10px;
+    padding: 3.5em;
+  }
+
+  .modal {
+    width: 100%;
+  }
+
+  .name {
+    color: $madder;
+    font-size: 1.6em;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
