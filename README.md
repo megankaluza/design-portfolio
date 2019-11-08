@@ -3,7 +3,7 @@
 #### By _**Megan Kaluza**_
 
 # _Live_
-![screenshot](img/screen_shot.png)
+![screenshot](img/screen-shot.png)
 
 ## Description
 
@@ -14,12 +14,9 @@ _Objectives_
 ## Setup/Installation Requirements
 
 * _mkaluza.com_
-* _Check out the GitHub Pages: https://megankaluza.github.io/personal-portfolio/_
-* _Clone this repository https://github.com/megankaluza/personal-portfolio.git_
+* _Check out the GitHub Pages: https://megankaluza.github.io/design-portfolio/_
+* _Clone this repository https://github.com/megankaluza/design-portfolio.git_
 * _gem install sass_
-* _gem install bourbon_
-* _gem install neat_
-* _gem install saffron_
 * _sass --watch ._
 * _Open in browser of your choice_
 
