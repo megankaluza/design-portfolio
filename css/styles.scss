@@ -283,6 +283,7 @@ img.open {
 #imageFashion,
 #imageExodus,
 #imageTerraForma,
+#imageCards,
 #imageSampleUniversity,
 #imageFeralBlack,
 #imageFeralWhite,
@@ -310,6 +311,10 @@ img.open {
 }
 
 #imageTerraForma {
+  background-image: url('#{$path-img}/ferris-wheel.jpg');
+}
+
+#imageCards {
   background-image: url('#{$path-img}/ferris-wheel.jpg');
 }
 
