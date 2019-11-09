@@ -74,15 +74,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   align-items: center;
   justify-content: center; }
 
-.exit, .hamburger, .hamburger span, .hamburger span::before,
+.exit, .modal .image, .hamburger, .hamburger span, .hamburger span::before,
 .hamburger span::after, .about-me, .content-section, .case-study, .landing-content, .savvy {
   display: block;
   margin: 0 auto; }
 
 h4,
 h5 {
-  font-family: "Cabin", sans-serif;
-  font-variant: small-caps;
+  font-family: "Sedgwick Ave Display", cursive;
   text-align: center; }
 
 h4 {
@@ -100,7 +99,6 @@ h4 {
 .modal {
   display: none; }
   .modal .image {
-    display: block;
     margin: 0 auto;
     width: 100%; }
 
@@ -275,10 +273,6 @@ header {
   min-height: 100vh;
   padding: 2em 1em; }
 
-.article {
-  width: 100%;
-  max-width: 70em; }
-
 @media (min-width: 700px) {
   .article {
     column-count: 2;
@@ -380,6 +374,25 @@ span {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
+.fullscreen-image {
+  opacity: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
+
+.fullscreen-bg__image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.white {
+  background-color: #FFFFFF; }
+
 .about-me {
   font-size: 2em; }
 
@@ -472,9 +485,6 @@ img.open {
 .savvy {
   padding: 1em;
   width: 60%; }
-
-.social {
-  width: 100px; }
 
 .vertical-text {
   color: #E71D36;
@@ -577,6 +587,9 @@ img.open {
   .menu {
     height: 100vh; } }
 @media only screen and (min-width: 667px) and (max-width: 768px) {
+  h3 {
+    font-size: 1.3em; }
+
   .content {
     display: flex;
     align-items: center;
@@ -594,7 +607,7 @@ img.open {
     width: 88%; } }
 @media only screen and (max-width: 415px) {
   h3 {
-    font-size: 1.5em; }
+    font-size: 1.3em; }
 
   .about-me {
     font-size: 12px; }
@@ -634,6 +647,9 @@ img.open {
 
   .menu {
     height: 100vh; }
+
+  .menu li {
+    font-size: 1em; }
 
   .modal {
     width: 100%; }
