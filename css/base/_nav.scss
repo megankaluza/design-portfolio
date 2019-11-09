@@ -166,7 +166,6 @@ header {
   opacity: 0;
   transition:
   opacity $button-transistion-duration;
-  // padding: 1em;
   &:first-child {
     margin-top: $button-width;
   }

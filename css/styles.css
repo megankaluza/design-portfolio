@@ -354,6 +354,38 @@ span {
   font-size: 5.5em;
   color: #E71D36; }
 
+.about-me {
+  font-size: 1.8em; }
+
+.back a {
+  color: #000000;
+  font-size: 2em;
+  position: fixed;
+  right: 2em;
+  top: 50%;
+  left: 5%;
+  z-index: 100; }
+
+.content {
+  height: 100vh; }
+
+.case-study {
+  width: 55%;
+  height: 100%; }
+
+.container {
+  display: flex-inline; }
+
+.date {
+  top: 30%;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+
+.enter a {
+  position: relative;
+  left: 2em;
+  top: 50%; }
+
 .fullscreen-bg {
   opacity: 60%;
   position: fixed;
@@ -390,47 +422,6 @@ span {
   width: 100%;
   height: 100%; }
 
-.white {
-  background-color: #FFFFFF; }
-
-.about-me {
-  font-size: 2em; }
-
-.back a {
-  color: #000000;
-  font-size: 2em;
-  position: fixed;
-  right: 2em;
-  top: 50%;
-  left: 5%;
-  z-index: 100; }
-
-.content {
-  height: 100vh; }
-
-.case-study {
-  width: 55%;
-  height: 100%; }
-
-.container {
-  display: flex-inline; }
-
-.date {
-  top: 30%;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
-
-.enter a {
-  position: relative;
-  left: 2em;
-  top: 50%; }
-
-.landing-content {
-  border: 8px solid #000000;
-  width: 690px;
-  height: 690px;
-  padding-top: 4em; }
-
 .grow {
   width: 10%;
   transition: all .2s ease-in-out; }
@@ -454,6 +445,12 @@ span {
   .label h3 {
     color: #FFFFFF; }
 
+.landing-content {
+  border: 8px solid #000000;
+  width: 690px;
+  height: 690px;
+  padding-top: 4em; }
+
 .margin {
   margin-bottom: 3em; }
 
@@ -468,6 +465,11 @@ span {
   opacity: 0;
   transition: all .2s ease-in-out; }
   .open:hover {
+    transform: scale(1.1); }
+
+.open-website {
+  transition: all .2s ease-in-out; }
+  .open-website:hover {
     transform: scale(1.1); }
 
 img.open {
@@ -493,6 +495,9 @@ img.open {
   font-family: "Sedgwick Ave Display", cursive;
   font-size: 2em;
   transform: rotate(-280deg); }
+
+.white {
+  background-color: #FFFFFF; }
 
 .column {
   width: 200px;
@@ -591,6 +596,9 @@ img.open {
   h3 {
     font-size: 1.3em; }
 
+  img.open {
+    width: 300px; }
+
   .content {
     display: flex;
     align-items: center;
@@ -609,6 +617,13 @@ img.open {
 @media only screen and (max-width: 415px) {
   h3 {
     font-size: 1.3em; }
+
+  h3.signature {
+    font-size: 1.2em;
+    padding-top: 7em; }
+
+  img.open {
+    width: 300px; }
 
   .about-me {
     font-size: 12px; }
@@ -641,10 +656,6 @@ img.open {
   .landing-footer {
     font-size: 13px;
     padding-top: 10em; }
-
-  h3.signature {
-    font-size: 1.2em;
-    padding-top: 7em; }
 
   .menu {
     height: 100vh; }

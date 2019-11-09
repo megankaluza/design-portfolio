@@ -52,6 +52,56 @@ span {
   color: $madder;
 }
 
+.about-me {
+  @extend %block;
+  font-size: 1.8em;
+  // padding: 5.8em;
+}
+
+.back a {
+  color: $black;
+  font-size: 2em;
+  position: fixed;
+  right: 2em;
+  top: 50%;
+  left: 5%;
+  z-index: 100;
+}
+
+.content {
+  height: 100vh;
+}
+
+.content-section {
+  @extend %block;
+}
+
+.case-study {
+  @extend %block;
+  width: 55%;
+  height: 100%;
+}
+
+.container {
+  display: flex-inline;
+}
+
+.date {
+  // position: absolute;
+  top: 30%;
+  // right: 30%;
+  // animation: slide-title-in;
+  // animation-duration: 2000ms;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
+}
+
+.enter a {
+  position: relative;
+  left: 2em;
+  top: 50%;
+}
+
 // Video
 .fullscreen-bg {
   opacity: 60%;
@@ -97,73 +147,6 @@ span {
   // filter: grayscale(100%);
 }
 
-// About
-.white {
-  background-color: $white;
-}
-
-.about-me {
-  @extend %block;
-  font-size: 2em;
-  // padding: 5.8em;
-}
-
-.back a {
-  color: $black;
-  font-size: 2em;
-  position: fixed;
-  right: 2em;
-  top: 50%;
-  left: 5%;
-  z-index: 100;
-}
-
-.content {
-  height: 100vh;
-}
-
-.content-section {
-  @extend %block;
-}
-
-// Fashion Page
-.case-study {
-  @extend %block;
-  width: 55%;
-  height: 100%;
-}
-
-.container {
-  display: flex-inline;
-}
-
-// Landing Page
-.date {
-  // position: absolute;
-  top: 30%;
-  // right: 30%;
-  // animation: slide-title-in;
-  // animation-duration: 2000ms;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
-}
-
-.enter a {
-  position: relative;
-  left: 2em;
-  top: 50%;
-}
-
-.landing-content {
-  // background-color: $white;
-  border: 8px solid $black;
-  @extend %block;
-  width: 690px;
-  height: 690px;
-  padding-top: 4em;
-}
-
-// All
 .grow {
   width: 10%;
   transition: all .2s ease-in-out;
@@ -199,6 +182,19 @@ span {
   }
 }
 
+.landing-content {
+  // background-color: $white;
+  border: 8px solid $black;
+  @extend %block;
+  width: 690px;
+  height: 690px;
+  padding-top: 4em;
+}
+
+// .landing-footer {
+//   padding-top: 6.8em;
+// }
+
 .margin {
   margin-bottom: 3em;
 }
@@ -215,6 +211,14 @@ span {
 
 .open {
   opacity: 0;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.open-website {
+  // opacity: 0;
   transition: all .2s ease-in-out;
   &:hover {
     transform: scale(1.1);
@@ -254,6 +258,10 @@ img.open {
   font-family: $stack-sedgwick;
   font-size: 2em;
   transform: rotate(-280deg);
+}
+
+.white {
+  background-color: $white;
 }
 
 // Columns
@@ -397,6 +405,10 @@ and (max-width: 768px) {
     font-size: 1.3em;
   }
 
+  img.open {
+    width: 300px;
+  }
+
   .content {
     display: flex;
     align-items: center;
@@ -423,6 +435,15 @@ and (max-width: 768px) {
 and (max-width: 415px) {
   h3 {
     font-size: 1.3em;
+  }
+
+  h3.signature {
+    font-size: 1.2em;
+    padding-top: 7em;
+  }
+
+  img.open {
+    width: 300px;
   }
 
   .about-me {
@@ -462,11 +483,6 @@ and (max-width: 415px) {
   .landing-footer {
     font-size: 13px;
     padding-top: 10em;
-  }
-
-  h3.signature {
-    font-size: 1.2em;
-    padding-top: 7em;
   }
 
   .menu {
