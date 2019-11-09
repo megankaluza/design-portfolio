@@ -92,9 +92,11 @@ span {
 }
 
 .content {
-  // @extend %block;
-  // width: 920px;
   height: 100vh;
+}
+
+.content-section {
+  @extend %block;
 }
 
 // Fashion Page
@@ -363,11 +365,19 @@ img.open {
 (min-width: 1024px)
 and (max-width: 1025px) {
   .content {
-    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu {
-    height: 800px;
+    height: 100vh;
   }
 }
 
@@ -375,13 +385,19 @@ and (max-width: 1025px) {
 (min-width: 667px)
 and (max-width: 768px) {
   .content {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu {
-    height: 1000px;
+    height: 100vh;
   }
 
   //Modal//
@@ -411,12 +427,13 @@ and (max-width: 415px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    // height: 100vh;
   }
 
-  // .date {
-  //   top: 20%;
-  // }
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .gallery .box {
     width: 100%;
@@ -425,18 +442,13 @@ and (max-width: 415px) {
   }
 
   .landing-content {
-    // padding-top: 10em;
     width: 300px;
     height: 400px;
   }
 
   .landing-footer {
     font-size: 13px;
-    padding-top: 10.6em;
-  }
-
-  .content-section {
-    padding-top: 8em;
+    padding-top: 10em;
   }
 
   h3.signature {
@@ -445,12 +457,12 @@ and (max-width: 415px) {
   }
 
   .menu {
-    height: 580px;
+    height: 100vh;
   }
 
   .menu li {
-    font-size: 10px;
-    padding: 3.5em;
+    // font-size: 10px;
+    // padding: 3.5em;
   }
 
   .modal {

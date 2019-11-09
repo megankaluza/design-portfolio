@@ -17,7 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #imageAesthetic,
 #imageInsta,
 #imageSpecialist,
-#imageSpecialistBlack, .columns, .gallery {
+#imageSpecialistBlack, .menu, .columns, .gallery {
   display: flex; }
 
 .contact, #footer-title, h3.title, .intro, .label {
@@ -74,7 +74,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   align-items: center;
   justify-content: center; }
 
-.exit, .about-me, .case-study, .landing-content, .savvy {
+.exit, .hamburger, .hamburger span, .hamburger span::before,
+.hamburger span::after, .about-me, .content-section, .case-study, .landing-content, .savvy {
   display: block;
   margin: 0 auto; }
 
@@ -146,7 +147,6 @@ header {
   display: inline-block; }
 
 .hamburger {
-  display: block;
   position: absolute;
   right: 20px;
   top: 0;
@@ -161,7 +161,6 @@ header {
   transition: background 0.3s; }
 
 .hamburger span {
-  display: block;
   position: absolute;
   top: 20px;
   left: 10px;
@@ -172,7 +171,6 @@ header {
 .hamburger span::before,
 .hamburger span::after {
   position: absolute;
-  display: block;
   left: 0;
   width: 100%;
   height: 2px;
@@ -223,7 +221,13 @@ header {
 [type=checkbox]:checked ~ label span::after {
   transition-delay: 0.3s, 0.3s; }
 
+.nav {
+  display: block; }
+
 .menu {
+  align-items: right;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   width: 100%;
@@ -236,7 +240,7 @@ header {
   transition: transform 0.65s; }
 
 .menu a {
-  font-size: 2.7em;
+  font-size: 3em;
   color: #000000; }
   .menu a:hover {
     color: #E71D36; }
@@ -244,12 +248,11 @@ header {
 .menu li {
   height: 42px;
   line-height: 42px;
-  text-align: center;
+  text-align: right;
   font-family: "Sedgwick Ave Display", cursive;
   font-variant: small-caps;
   opacity: 0;
-  transition: opacity 0.3s;
-  padding: 4em; }
+  transition: opacity 0.3s; }
   .menu li:first-child {
     margin-top: 42px; }
 
@@ -269,7 +272,7 @@ header {
   transition-delay: 0.75s; }
 
 .content-section {
-  min-height: 70vh;
+  min-height: 100vh;
   padding: 2em 1em; }
 
 .article {
@@ -562,18 +565,30 @@ img.open {
 
 @media only screen and (min-width: 1024px) and (max-width: 1025px) {
   .content {
-    height: 800px; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   .menu {
-    height: 800px; } }
+    height: 100vh; } }
 @media only screen and (min-width: 667px) and (max-width: 768px) {
   .content {
-    display: block;
-    margin: 0 auto;
-    width: 100%; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   .menu {
-    height: 1000px; }
+    height: 100vh; }
 
   .ui.modal {
     width: 88%; } }
@@ -595,6 +610,11 @@ img.open {
     align-items: center;
     justify-content: center; }
 
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
   .gallery .box {
     width: 100%;
     height: 500px;
@@ -606,21 +626,14 @@ img.open {
 
   .landing-footer {
     font-size: 13px;
-    padding-top: 10.6em; }
-
-  .content-section {
-    padding-top: 8em; }
+    padding-top: 10em; }
 
   h3.signature {
     font-size: 1.2em;
     padding-top: 7em; }
 
   .menu {
-    height: 580px; }
-
-  .menu li {
-    font-size: 10px;
-    padding: 3.5em; }
+    height: 100vh; }
 
   .modal {
     width: 100%; }

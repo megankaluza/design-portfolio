@@ -43,7 +43,7 @@ header {
 .floating-li > li{display: inline-block}
 
 .hamburger {
-  display: block;
+  @extend %block;
   // position: relative;
   position: absolute;
   right: $button-mar-L;
@@ -61,24 +61,22 @@ header {
 }
 
 .hamburger span {
-  display: block;
+  @extend %block;
   position: absolute;
   top: ($button-height / 2) - ($bar-thickness / 2);
   left: $button-pad;
   right: $button-pad;
   height: $bar-thickness;
-  // background: $white;
   background: $black;
 }
 
 .hamburger span::before,
 .hamburger span::after {
+  @extend %block;
   position: absolute;
-  display: block;
   left: 0;
   width: 100%;
   height: $bar-thickness;
-  // background: $white;
   background: $black;
   content: "";
 }
@@ -129,7 +127,15 @@ header {
 .btn-container {
 }
 
+.nav {
+  display: block;
+}
+
 .menu {
+  @extend %flex;
+  align-items: right;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   width: 100%;
@@ -144,7 +150,7 @@ header {
 }
 
 .menu a {
-  font-size: 2.7em;
+  font-size: 3em;
   color: $black;
   &:hover {
     color: $madder;
@@ -154,13 +160,13 @@ header {
 .menu li {
   height: $button-height;
   line-height: $button-height;
-  text-align: center;
+  text-align: right;
   font-family: $stack-sedgwick;
   font-variant: small-caps;
   opacity: 0;
   transition:
   opacity $button-transistion-duration;
-  padding: 4em;
+  // padding: 1em;
   &:first-child {
     margin-top: $button-width;
   }
@@ -187,7 +193,7 @@ header {
 }
 
 .content-section {
-  min-height: 70vh;
+  min-height: 100vh;
   padding: 2em 1em;
   // background-color: #fff;
   h2 {
