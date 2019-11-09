@@ -214,6 +214,7 @@ span {
 }
 
 .open {
+  opacity: 0;
   transition: all .2s ease-in-out;
   &:hover {
     transform: scale(1.1);
@@ -221,7 +222,7 @@ span {
 }
 
 img.open {
-  width: 130px;
+  width: 450px;
 }
 
 .plus-minus {
