@@ -19,11 +19,20 @@
   }
 }
 
-#footer-title {
+
+#footer-title,
+#footer-copy {
   @extend %centered;
   color: $white;
-  font-family: $stack-sedgwick;
   font-size: 1em;
   margin-top: 1em;
   padding: 1em;
+}
+
+#footer-copy {
+  font-variant: small-caps;
+}
+
+#footer-title {
+  font-family: $stack-sedgwick;
 }

@@ -20,7 +20,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #imageSpecialistBlack, .menu, .columns, .gallery {
   display: flex; }
 
-.contact, #footer-title, h3.title, .intro, .label {
+.contact, #footer-title,
+#footer-copy, h3.title, .intro, .label {
   text-align: center; }
 
 #imageFashion,
@@ -81,12 +82,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 h4,
 h5 {
-  font-family: "Sedgwick Ave Display", cursive;
+  font-variant: small-caps;
   text-align: center; }
 
 h4 {
   color: #000000;
-  font-size: 2em;
+  font-size: 3em;
   padding: .5em; }
 
 .create {
@@ -113,12 +114,18 @@ h4 {
 #footer a:hover {
   color: #000000; }
 
-#footer-title {
+#footer-title,
+#footer-copy {
   color: #FFFFFF;
-  font-family: "Sedgwick Ave Display", cursive;
   font-size: 1em;
   margin-top: 1em;
   padding: 1em; }
+
+#footer-copy {
+  font-variant: small-caps; }
+
+#footer-title {
+  font-family: "Sedgwick Ave Display", cursive; }
 
 header {
   position: fixed;
@@ -492,13 +499,6 @@ img.open {
   padding: 1em;
   width: 60%; }
 
-.vertical-text {
-  color: #E71D36;
-  display: inline-block;
-  font-family: "Sedgwick Ave Display", cursive;
-  font-size: 2em;
-  transform: rotate(-280deg); }
-
 .white {
   background-color: #FFFFFF; }
 
@@ -597,7 +597,7 @@ img.open {
     height: 100vh; } }
 @media only screen and (min-width: 667px) and (max-width: 768px) {
   h3 {
-    font-size: 1.3em; }
+    font-size: 1.8em; }
 
   img.open {
     width: 300px; }
@@ -619,11 +619,14 @@ img.open {
     width: 88%; } }
 @media only screen and (max-width: 415px) {
   h3 {
-    font-size: 1.3em; }
+    font-size: 1.8em; }
 
   h3.signature {
-    font-size: 1.2em;
-    padding-top: 7em; }
+    font-size: 1.8em;
+    padding-top: 3.5em; }
+
+  h4 {
+    font-size: 2em; }
 
   img.open {
     width: 300px; }

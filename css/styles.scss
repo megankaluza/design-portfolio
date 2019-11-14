@@ -257,13 +257,13 @@ img.open {
 //   width: 100px;
 // }
 
-.vertical-text {
-  color: $madder;
-  display: inline-block;
-  font-family: $stack-sedgwick;
-  font-size: 2em;
-  transform: rotate(-280deg);
-}
+// .vertical-text {
+//   color: $madder;
+//   display: inline-block;
+//   font-family: $stack-sedgwick;
+//   font-size: 2em;
+//   transform: rotate(-280deg);
+// }
 
 .white {
   background-color: $white;
@@ -407,7 +407,7 @@ and (max-width: 1025px) {
 (min-width: 667px)
 and (max-width: 768px) {
   h3 {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
 
   img.open {
@@ -439,12 +439,16 @@ and (max-width: 768px) {
 @media only screen
 and (max-width: 415px) {
   h3 {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
 
   h3.signature {
-    font-size: 1.2em;
-    padding-top: 7em;
+    font-size: 1.8em;
+    padding-top: 3.5em;
+  }
+
+  h4 {
+    font-size: 2em;
   }
 
   img.open {
