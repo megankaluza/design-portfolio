@@ -344,15 +344,18 @@ p {
   padding: 1.5em; }
 
 span {
-  color: #E71D36; }
+  color: #FFFFFF; }
+
+.about {
+  background-color: #E71D36; }
 
 .bold,
 .bolder {
-  font-family: "Sedgwick Ave Display", cursive; }
+  font-variant: small-caps; }
 
 .bolder {
   font-size: 5.5em;
-  color: #E71D36; }
+  color: #FFFFFF; }
 
 .about-me {
   font-size: 1.8em; }

@@ -39,17 +39,22 @@ p {
 }
 
 span {
-  color: $madder;
+  color: $white;
+}
+
+.about {
+  background-color: $madder;
 }
 
 .bold,
 .bolder {
-  font-family: $stack-sedgwick;
+  // font-family: $stack-sedgwick;
+  font-variant: small-caps;
 }
 
 .bolder {
   font-size: 5.5em;
-  color: $madder;
+  color: $white;
 }
 
 .about-me {
