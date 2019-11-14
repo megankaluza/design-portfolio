@@ -223,7 +223,6 @@ span {
 }
 
 .open-website {
-  // opacity: 0;
   transition: all .2s ease-in-out;
   &:hover {
     transform: scale(1.1);
@@ -231,7 +230,7 @@ span {
 }
 
 img.open {
-  width: 450px;
+  width: 300px;
 }
 
 .plus-minus {
@@ -327,15 +326,15 @@ img.open {
 }
 
 #imageFashion {
-  background-image: url('#{$path-img}/ferris-wheel.jpg');
+  background-image: url('#{$path-img}/eyelashes.jpg');
 }
 
 #imageExodus {
-  background-image: url('#{$path-img}/ferris-wheel.jpg');
+  background-image: url('#{$path-img}/exodus-home.png');
 }
 
 #imageTerraForma {
-  background-image: url('#{$path-img}/ferris-wheel.jpg');
+  background-image: url('#{$path-img}/terra-forma.png');
 }
 
 #imageCards {
@@ -343,7 +342,7 @@ img.open {
 }
 
 #imageSampleUniversity {
-  background-image: url('#{$path-img}/ferris-wheel.jpg');
+  background-image: url('#{$path-img}/sample-university.png');
 }
 
 #imageFeralBlack {
@@ -411,7 +410,7 @@ and (max-width: 768px) {
   }
 
   img.open {
-    width: 300px;
+    width: 200px;
   }
 
   .content {
@@ -452,7 +451,7 @@ and (max-width: 415px) {
   }
 
   img.open {
-    width: 300px;
+    width: 200px;
   }
 
   .about-me {
