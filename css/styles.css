@@ -659,6 +659,9 @@ img.open {
     align-items: center;
     justify-content: center; }
 
+  .fullscreen-bg__video {
+    display: none; }
+
   .gallery .box {
     width: 100%;
     height: 500px;
@@ -686,7 +689,10 @@ img.open {
     font-size: 1.6em; }
 
   .wrapper {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #footer-title {
+    color: #E71D36; } }
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
     width: 100%;
