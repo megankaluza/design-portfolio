@@ -4,6 +4,10 @@
 // Sass Components
 @import "base/index";
 
+// html.sr .load-hidden {
+//     visibility: hidden;
+// }
+
 body {
   width: 100%;
 }
@@ -337,7 +341,7 @@ img.open {
 }
 
 #imageExodus {
-  background-image: url('#{$path-img}/exodus-home.png');
+  background-image: url('#{$path-img}/exodus.png');
 }
 
 #imageTerraForma {
@@ -349,7 +353,7 @@ img.open {
 }
 
 #imageSampleUniversity {
-  background-image: url('#{$path-img}/sample-university.png');
+  background-image: url('#{$path-img}/sample-university.jpg');
 }
 
 #imageFeralBlack {
@@ -361,11 +365,11 @@ img.open {
 }
 
 #imageTumblr {
-  background-image: url('#{$path-img}/tumblr.png');
+  background-image: url('#{$path-img}/tumblr.jpg');
 }
 
 #imageAdidas {
-  background-image: url('#{$path-img}/adidas.png');
+  background-image: url('#{$path-img}/adidas.jpg');
 }
 
 #imageMobile {
@@ -373,7 +377,7 @@ img.open {
 }
 
 #imageAesthetic {
-  background-image: url('#{$path-img}/fashion-mock-up.png');
+  background-image: url('#{$path-img}/fashion-mock-up.jpg');
 }
 
 #imageInsta {
