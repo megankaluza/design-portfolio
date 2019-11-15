@@ -565,10 +565,7 @@ img.open {
   background-image: url("../img/sample-university.jpg"); }
 
 #imageFeralBlack {
-  background-image: url("../img/feral-black.png"); }
-
-#imageFeralWhite {
-  background-image: url("../img/feral-white.png"); }
+  background-image: url("../img/feral.png"); }
 
 #imageTumblr {
   background-image: url("../img/tumblr.jpg"); }
@@ -586,10 +583,7 @@ img.open {
   background-image: url("../img/ig.png"); }
 
 #imageSpecialist {
-  background-image: url("../img/hybrid-white.png"); }
-
-#imageSpecialistBlack {
-  background-image: url("../img/hybrid-cloud-specialist.png"); }
+  background-image: url("../img/hybrid-cloud.png"); }
 
 @media only screen and (min-width: 1024px) and (max-width: 1025px) {
   .content {
@@ -692,7 +686,13 @@ img.open {
     margin: 0 auto; }
 
   #footer-title {
-    color: #E71D36; } }
+    color: #E71D36; }
+
+  #imageFeralBlack {
+    background-image: url("../img/feral-black.png"); }
+
+  #imageSpecialist {
+    background-image: url("../img/hybrid-white.png"); } }
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
     width: 100%;

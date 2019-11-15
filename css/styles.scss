@@ -357,12 +357,12 @@ img.open {
 }
 
 #imageFeralBlack {
-  background-image: url('#{$path-img}/feral-black.png');
+  background-image: url('#{$path-img}/feral.png');
 }
 
-#imageFeralWhite {
-  background-image: url('#{$path-img}/feral-white.png');
-}
+// #imageFeralWhite {
+//   background-image: url('#{$path-img}/feral-white.png');
+// }
 
 #imageTumblr {
   background-image: url('#{$path-img}/tumblr.jpg');
@@ -385,12 +385,12 @@ img.open {
 }
 
 #imageSpecialist {
-  background-image: url('#{$path-img}/hybrid-white.png');
+  background-image: url('#{$path-img}/hybrid-cloud.png');
 }
 
-#imageSpecialistBlack {
-  background-image: url('#{$path-img}/hybrid-cloud-specialist.png');
-}
+// #imageSpecialistBlack {
+//   background-image: url('#{$path-img}/hybrid-cloud-specialist.png');
+// }
 
 // Media Queries
 @media only screen and
@@ -531,6 +531,14 @@ and (max-width: 415px) {
 
   #footer-title {
     color: $madder;
+  }
+
+  #imageFeralBlack {
+    background-image: url('#{$path-img}/feral-black.png');
+  }
+
+  #imageSpecialist {
+    background-image: url('#{$path-img}/hybrid-white.png');
   }
 }
 
