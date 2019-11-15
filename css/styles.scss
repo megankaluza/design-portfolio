@@ -200,7 +200,7 @@ span {
 
 .landing-content {
   // background-color: $white;
-  border: 8px solid $black;
+  border: 5px solid $black;
   @extend %block;
   width: 690px;
   height: 690px;
@@ -453,7 +453,7 @@ and (max-width: 415px) {
   }
 
   h3.signature {
-    font-size: 1.8em;
+    font-size: 2.5em;
     padding-top: 3.5em;
   }
 
@@ -499,13 +499,14 @@ and (max-width: 415px) {
   }
 
   .landing-content {
+    border: 2px solid $black;
     width: 300px;
     height: 400px;
   }
 
   .landing-footer {
-    font-size: 13px;
-    padding-top: 10em;
+    font-size: 18px;
+    padding-top: 3.8em;
   }
 
   .menu {
@@ -530,7 +531,8 @@ and (max-width: 415px) {
   }
 
   #footer-title {
-    color: $madder;
+    color: $black;
+    padding: 5px;
   }
 
   #imageFeralBlack {

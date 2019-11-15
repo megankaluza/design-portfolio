@@ -465,7 +465,7 @@ span {
     color: #FFFFFF; }
 
 .landing-content {
-  border: 8px solid #000000;
+  border: 5px solid #000000;
   width: 690px;
   height: 690px;
   padding-top: 4em; }
@@ -625,7 +625,7 @@ img.open {
     font-size: 1.8em; }
 
   h3.signature {
-    font-size: 1.8em;
+    font-size: 2.5em;
     padding-top: 3.5em; }
 
   h4 {
@@ -662,12 +662,13 @@ img.open {
     background-size: contain; }
 
   .landing-content {
+    border: 2px solid #000000;
     width: 300px;
     height: 400px; }
 
   .landing-footer {
-    font-size: 13px;
-    padding-top: 10em; }
+    font-size: 18px;
+    padding-top: 3.8em; }
 
   .menu {
     height: 100vh; }
@@ -686,7 +687,8 @@ img.open {
     margin: 0 auto; }
 
   #footer-title {
-    color: #E71D36; }
+    color: #000000;
+    padding: 5px; }
 
   #imageFeralBlack {
     background-image: url("../img/feral-black.png"); }
