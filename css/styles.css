@@ -21,7 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: flex; }
 
 .contact, #footer-title,
-#footer-copy, h3.title, .intro, .label {
+#footer-copy, h3.title, .label {
   text-align: center; }
 
 #imageFashion,
@@ -60,7 +60,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   justify-content: center; }
 
 .exit, .modal .image, .hamburger, .hamburger span, .hamburger span::before,
-.hamburger span::after, .about-me, .content-section, .case-study, .landing-content, .savvy {
+.hamburger span::after, .about-me, .content-section, .fscreen-title, .case-study, .landing-content, .savvy {
   display: block;
   margin: 0 auto; }
 
@@ -260,10 +260,6 @@ header {
   transition-delay: 1.05s;
   transition-delay: 0.75s; }
 
-.content-section {
-  min-height: 100vh;
-  padding: 2em 1em; }
-
 @media (min-width: 700px) {
   .article {
     column-count: 2;
@@ -284,19 +280,6 @@ header {
     transform: scale(1.05) translate(-50.5%, -49.75%); }
   60% {
     transform: scale(1.09) translate(-48%, -48%); } }
-.fscreen {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  padding: 2em; }
-
-.fscreen-title {
-  position: relative;
-  top: 30%;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
-
 @keyframes slide-title-in {
   0% {
     opacity: 0;
@@ -338,7 +321,7 @@ span {
   color: #FFFFFF; }
 
 .about {
-  background-color: #E71D36; }
+  background-color: #0EC865; }
 
 .bold,
 .bolder {
@@ -368,7 +351,22 @@ span {
 
 .content-section {
   position: relative;
-  top: 30%;
+  min-height: 100vh;
+  padding: 2em 1em;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+
+.fscreen {
+  background-color: #E71D36;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 2em; }
+
+.fscreen-title {
+  position: relative;
+  top: 20%;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
 
@@ -428,11 +426,6 @@ span {
 
 .image {
   width: 90%; }
-
-.intro {
-  border-bottom: 1px solid #000000;
-  background-color: #FFFFFF;
-  height: 30%; }
 
 .label {
   background: #c0c0c0;
@@ -607,7 +600,7 @@ img.open {
 
   h3.signature {
     font-size: 2.5em;
-    padding-top: 2.5em; }
+    padding-top: 4em; }
 
   h4 {
     font-size: 2em; }
@@ -616,13 +609,16 @@ img.open {
     width: 200px; }
 
   .about-me {
-    font-size: 12px; }
+    font-size: 15px; }
 
   .case-study {
     display: block;
     margin: 0 auto;
     width: 100%;
     height: 100%; }
+
+  .block {
+    display: block; }
 
   .content {
     display: flex;
@@ -645,11 +641,11 @@ img.open {
   .landing-content {
     border: 2px solid #000000;
     width: 300px;
-    height: 400px; }
+    height: 550px; }
 
   .landing-footer {
     font-size: 18px;
-    padding-top: .5em; }
+    padding-top: 6em; }
 
   .logo {
     width: 5em; }
@@ -664,21 +660,16 @@ img.open {
     width: 100%; }
 
   .name {
-    color: #E71D36;
     font-size: 1.6em; }
 
   .wrapper {
     margin: 0 auto; }
 
   #footer-title {
-    color: #000000;
     padding: 5px; }
 
   #landing-page {
     background-color: #1496ED; }
-
-  #imageAesthetic {
-    background-image: url("../img/fashion-mobile.jpg"); }
 
   #imageInsta {
     background-image: url("../img/ig-mobile.png"); }
@@ -686,14 +677,8 @@ img.open {
   #imageFeralBlack {
     background-image: url("../img/feral-black.png"); }
 
-  #imageSampleUniversity {
-    background-image: url("../img/sample-university-mobile.jpg"); }
-
   #imageSpecialist {
-    background-image: url("../img/hybrid-white.png"); }
-
-  #imageTumblr {
-    background-image: url("../img/tumblr-mobile.png"); } }
+    background-image: url("../img/hybrid-white.png"); } }
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
     width: 100%;
