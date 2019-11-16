@@ -38,22 +38,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #imageInsta,
 #imageSpecialist,
 #imageSpecialistBlack {
-  opacity: .5; }
-
-#imageFashion,
-#imageExodus,
-#imageTerraForma,
-#imageCards,
-#imageSampleUniversity,
-#imageFeralBlack,
-#imageFeralWhite,
-#imageTumblr,
-#imageAdidas,
-#imageMobile,
-#imageAesthetic,
-#imageInsta,
-#imageSpecialist,
-#imageSpecialistBlack {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat; }
@@ -340,7 +324,7 @@ h3 a {
 
 h3.signature {
   color: #FFFFFF;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   padding-top: 7em; }
 
@@ -399,11 +383,6 @@ span {
   top: 30%;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
-
-.enter a {
-  position: relative;
-  left: 2em;
-  top: 50%; }
 
 .fullscreen-bg {
   opacity: 60%;
@@ -470,6 +449,9 @@ span {
   height: 690px;
   padding-top: 4em; }
 
+.logo {
+  width: 8.5em; }
+
 .margin {
   margin-bottom: 3em; }
 
@@ -523,15 +505,14 @@ img.open {
 .box {
   width: 25%;
   height: 500px;
-  flex-grow: 1; }
+  flex-grow: 1;
+  -webkit-filter: grayscale(100%); }
+  .box:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%); }
 
 .gallery {
-  flex-wrap: wrap;
-  -webkit-filter: grayscale(100%); }
-  .gallery:hover {
-    opacity: 1;
-    filter: none;
-    -webkit-filter: grayscale(0%); }
+  flex-wrap: wrap; }
 
 #imageFashion:hover,
 #imageExodus:hover,
@@ -626,7 +607,7 @@ img.open {
 
   h3.signature {
     font-size: 2.5em;
-    padding-top: 3.5em; }
+    padding-top: 2.5em; }
 
   h4 {
     font-size: 2em; }
@@ -668,7 +649,10 @@ img.open {
 
   .landing-footer {
     font-size: 18px;
-    padding-top: 3.8em; }
+    padding-top: .5em; }
+
+  .logo {
+    width: 5em; }
 
   .menu {
     height: 100vh; }
@@ -690,11 +674,26 @@ img.open {
     color: #000000;
     padding: 5px; }
 
+  #landing-page {
+    background-color: #1496ED; }
+
+  #imageAesthetic {
+    background-image: url("../img/fashion-mobile.jpg"); }
+
+  #imageInsta {
+    background-image: url("../img/ig-mobile.png"); }
+
   #imageFeralBlack {
     background-image: url("../img/feral-black.png"); }
 
+  #imageSampleUniversity {
+    background-image: url("../img/sample-university-mobile.jpg"); }
+
   #imageSpecialist {
-    background-image: url("../img/hybrid-white.png"); } }
+    background-image: url("../img/hybrid-white.png"); }
+
+  #imageTumblr {
+    background-image: url("../img/tumblr-mobile.png"); } }
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
     width: 100%;

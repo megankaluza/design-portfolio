@@ -28,7 +28,7 @@ h3 a {
 
 h3.signature {
   color: $white;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   padding-top: 7em;
 }
@@ -112,11 +112,11 @@ span {
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
 }
 
-.enter a {
-  position: relative;
-  left: 2em;
-  top: 50%;
-}
+// .enter a {
+//   position: relative;
+//   left: 2em;
+//   top: 50%;
+// }
 
 // Video
 .fullscreen-bg {
@@ -207,9 +207,9 @@ span {
   padding-top: 4em;
 }
 
-// .landing-footer {
-//   padding-top: 6.8em;
-// }
+.logo {
+  width: 8.5em;
+}
 
 .margin {
   margin-bottom: 3em;
@@ -297,21 +297,28 @@ img.open {
 
 // Gallery
 .box {
+  // @extend %opacity;
   width: 25%;
   height: 500px;
   flex-grow: 1;
+  -webkit-filter: grayscale(100%);
+    &:hover {
+    opacity: 1;
+    // filter: none;
+    -webkit-filter: grayscale(0%);
+  }
 }
 
 .gallery {
   @extend %flex;
   // flex-basis: 0;
   flex-wrap: wrap;
-  -webkit-filter: grayscale(100%);
-  &:hover {
-    opacity: 1;
-    filter: none;
-    -webkit-filter: grayscale(0%);
-  }
+  // -webkit-filter: grayscale(100%);
+  // &:hover {
+  //   opacity: 1;
+  //   filter: none;
+  //   -webkit-filter: grayscale(0%);
+  // }
 }
 
 #imageFashion,
@@ -330,7 +337,7 @@ img.open {
 #imageSpecialistBlack {
   @extend %align;
   @extend %image;
-  @extend %opacity;
+  // @extend %opacity;
   &:hover {
     opacity: 1;
   }
@@ -454,7 +461,7 @@ and (max-width: 415px) {
 
   h3.signature {
     font-size: 2.5em;
-    padding-top: 3.5em;
+    padding-top: 2.5em;
   }
 
   h4 {
@@ -486,6 +493,7 @@ and (max-width: 415px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    // top: 20%;
   }
 
   .fullscreen-bg__video {
@@ -506,7 +514,11 @@ and (max-width: 415px) {
 
   .landing-footer {
     font-size: 18px;
-    padding-top: 3.8em;
+    padding-top: .5em;
+  }
+
+  .logo {
+    width: 5em;
   }
 
   .menu {
@@ -535,12 +547,42 @@ and (max-width: 415px) {
     padding: 5px;
   }
 
+  #landing-page {
+    background-color: #1496ED;
+  }
+
+  //Images
+
+  // #imageAdidas {
+  //   background-image: url('#{$path-img}/adidas-mobile.png');
+  // }
+
+  #imageAesthetic {
+    background-image: url('#{$path-img}/fashion-mobile.jpg');
+  }
+
+  #imageInsta {
+    background-image: url('#{$path-img}/ig-mobile.png');
+  }
+
   #imageFeralBlack {
     background-image: url('#{$path-img}/feral-black.png');
   }
 
+  // #imageMobile {
+  //   background-image: url('#{$path-img}/epicodus-mobile.png');
+  // }
+
+  #imageSampleUniversity {
+    background-image: url('#{$path-img}/sample-university-mobile.jpg');
+  }
+
   #imageSpecialist {
     background-image: url('#{$path-img}/hybrid-white.png');
+  }
+
+  #imageTumblr {
+    background-image: url('#{$path-img}/tumblr-mobile.png');
   }
 }
 
