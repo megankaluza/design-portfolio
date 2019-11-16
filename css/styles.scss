@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap|Molle:400i|Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
 
 // Sass Components
 @import "base/index";
@@ -15,7 +15,8 @@ body {
 // Typography
 h3 {
   font-size: 2.5em;
-  font-family: $stack-sedgwick;
+  font-family: $stack-staatliches;
+  font-variant: small-caps;
   padding: 2em;
 }
 
@@ -34,8 +35,8 @@ h3.signature {
 }
 
 h3.title {
-  padding: .5em;
   @extend %centered;
+  padding: .5em;
 }
 
 p {
@@ -47,13 +48,11 @@ span {
 }
 
 .about {
-  // background-color: $madder;
-  background-color: #0EC865;
+  background-color: $madder;
 }
 
 .bold,
 .bolder {
-  // font-family: $stack-sedgwick;
   font-variant: small-caps;
 }
 
@@ -65,7 +64,6 @@ span {
 .about-me {
   @extend %block;
   font-size: 1.8em;
-  // padding: 5.8em;
 }
 
 .back a {
@@ -95,23 +93,6 @@ span {
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
 }
 
-.fscreen {
-  background-color: $madder;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  padding: 2em;
-}
-
-.fscreen-title {
-  @extend %block;
-  position: relative;
-  top: 20%;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
-}
-
 .case-study {
   @extend %block;
   width: 55%;
@@ -122,20 +103,10 @@ span {
   display: flex-inline;
 }
 
-.date {
-  // position: absolute;
-  top: 30%;
-  // right: 30%;
-  // animation: slide-title-in;
-  // animation-duration: 2000ms;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
-}
-
-// .enter a {
-//   position: relative;
-//   left: 2em;
-//   top: 50%;
+// .date {
+//   top: 30%;
+//   animation: slide-title-in 2000ms 1 alternate forwards;
+//   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
 // }
 
 // Video
@@ -183,6 +154,23 @@ span {
   // filter: grayscale(100%);
 }
 
+.fscreen {
+  // background-color: $madder;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+}
+
+.fscreen-title {
+  @extend %block;
+  position: relative;
+  top: 20%;
+  animation: slide-title-in 2000ms 1 alternate forwards;
+  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
+}
+
 .grow {
   width: 10%;
   transition: all .2s ease-in-out;
@@ -194,13 +182,6 @@ span {
 .image {
   width: 90%;
 }
-
-// .intro {
-//   @extend %centered;
-//   border-bottom: 1px solid $black;
-//   background-color: $white;
-//   height: 30%;
-// }
 
 .label {
   @extend %centered;
@@ -536,7 +517,7 @@ and (max-width: 415px) {
 
   .landing-footer {
     font-size: 18px;
-    padding-top: 6em;
+    padding-top: 5.7em;
   }
 
   .logo {

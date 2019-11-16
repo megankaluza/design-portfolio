@@ -3,6 +3,7 @@ ScrollReveal({ reset: true });
 ScrollReveal().reveal('.revealOne', { delay: 400 });
 ScrollReveal().reveal('.revealTwo', { delay: 600 });
 ScrollReveal().reveal('.revealThree', { delay: 800 });
+ScrollReveal().reveal('.revealFour', { delay: 1000 });
 
 //Time and Date Stamp
 // var MONTH_NAME = ['January', 'Febuary', 'March', 'April', 'May', 'June',
