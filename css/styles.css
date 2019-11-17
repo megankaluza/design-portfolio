@@ -479,6 +479,12 @@ img.open {
   padding: 1em;
   width: 60%; }
 
+.vertical-text {
+  color: #E71D36;
+  display: inline-block;
+  font-family: "Staatliches", cursive;
+  transform: rotate(-280deg); }
+
 .white {
   background-color: #FFFFFF; }
 
