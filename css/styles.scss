@@ -268,10 +268,9 @@ img.open {
 // }
 
 .vertical-text {
-  color: $madder;
-  display: inline-block;
+  width: 50px;
   font-family: $stack-staatliches;
-  transform: rotate(-280deg);
+  transform: rotate(-50deg);
 }
 
 .white {
@@ -543,6 +542,12 @@ and (max-width: 415px) {
   .name {
     // color: $madder;
     font-size: 1.6em;
+  }
+
+  .vertical-text {
+    width: 30px;
+    font-family: $stack-staatliches;
+    transform: rotate(-50deg);
   }
 
   .wrapper {

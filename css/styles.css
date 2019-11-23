@@ -483,10 +483,9 @@ img.open {
   width: 60%; }
 
 .vertical-text {
-  color: #E71D36;
-  display: inline-block;
+  width: 50px;
   font-family: "Staatliches", cursive;
-  transform: rotate(-280deg); }
+  transform: rotate(-50deg); }
 
 .white {
   background-color: #FFFFFF; }
@@ -667,6 +666,11 @@ img.open {
 
   .name {
     font-size: 1.6em; }
+
+  .vertical-text {
+    width: 30px;
+    font-family: "Staatliches", cursive;
+    transform: rotate(-50deg); }
 
   .wrapper {
     margin: 0 auto; }
