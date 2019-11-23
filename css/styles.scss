@@ -327,6 +327,7 @@ img.open {
 #imageSampleUniversity,
 #imageFeralBlack,
 #imageFeralWhite,
+#imageBody,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -358,9 +359,9 @@ img.open {
   background-image: url('#{$path-img}/ferris-wheel.jpg');
 }
 
-#imageSampleUniversity {
-  background-image: url('#{$path-img}/sample-university.jpg');
-}
+// #imageSampleUniversity {
+//   background-image: url('#{$path-img}/sample-university.jpg');
+// }
 
 #imageFeralBlack {
   background-image: url('#{$path-img}/feral.png');
@@ -369,6 +370,10 @@ img.open {
 // #imageFeralWhite {
 //   background-image: url('#{$path-img}/feral-white.png');
 // }
+
+#imageBody {
+  background-image: url('#{$path-img}/ux-design.png');
+}
 
 #imageTumblr {
   background-image: url('#{$path-img}/tumblr.jpg');

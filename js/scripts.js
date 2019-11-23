@@ -86,6 +86,13 @@ $(document).ready(function(){
     })
     .modal('show');
   });
+  $('#openBody').click(function(){
+    $('.body')
+    .modal({
+      blurring: true
+    })
+    .modal('show');
+  });
   $('#openTumblr').click(function(){
     $('.tumblr')
     .modal({
