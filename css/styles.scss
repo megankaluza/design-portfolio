@@ -4,19 +4,14 @@
 // Sass Components
 @import "base/index";
 
-// html.sr .load-hidden {
-//     visibility: hidden;
-// }
-
 body {
   width: 100%;
 }
 
 // Typography
 h3 {
+  @extend %font;
   font-size: 2.5em;
-  font-family: $stack-staatliches;
-  font-variant: small-caps;
   padding: 2em;
 }
 
@@ -28,10 +23,8 @@ h3 a {
 }
 
 h3.signature {
-  color: $white;
+  @extend %align;
   font-size: 2em;
-  text-align: center;
-  padding-top: 3em;
 }
 
 h3.title {
@@ -43,21 +36,12 @@ p {
   padding: 1.5em;
 }
 
-span {
-  color: $white;
-}
-
 .about {
   background-color: $madder;
 }
 
-.bold,
-.bolder {
-  font-variant: small-caps;
-}
-
-.bolder {
-  font-size: 5.5em;
+.bold {
+  @extend %font;
   color: $white;
 }
 
@@ -68,7 +52,7 @@ span {
 
 .back a {
   color: $black;
-  font-size: 2em;
+  font-size: 3em;
   position: fixed;
   right: 2em;
   top: 50%;
@@ -76,31 +60,13 @@ span {
   z-index: 100;
 }
 
-.content {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-}
-
 .content-section {
   @extend %block;
   position: relative;
   min-height: 100vh;
   padding: 2em 1em;
-  // top: 30%;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
-}
-
-.case-study {
-  @extend %block;
-  width: 55%;
-  height: 100%;
-}
-
-.container {
-  display: flex-inline;
 }
 
 // .date {
@@ -108,68 +74,6 @@ span {
 //   animation: slide-title-in 2000ms 1 alternate forwards;
 //   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
 // }
-
-// Video
-.fullscreen-bg {
-  opacity: 60%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-// Image
-.fullscreen-image {
-  opacity: 60%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-.fullscreen-bg__image {
-  // position: absolute;
-  // height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  // filter: grayscale(100%);
-}
-
-.fscreen {
-  // background-color: $madder;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  padding: 2em;
-}
-
-.fscreen-title {
-  @extend %block;
-  position: relative;
-  top: 20%;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
-}
 
 .grow {
   width: 10%;
@@ -186,11 +90,8 @@ span {
 .label {
   @extend %centered;
   background: $silver;
-  // background-image: url('#{$path-img}/black-bubbles.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
-  // border-bottom: 2px solid $black;
-  // border-top: 2px solid $black;
   a {
     color: $white;
   }
@@ -208,40 +109,16 @@ span {
 }
 
 .logo {
-  width: 8.5em;
-}
-
-.margin {
-  margin-bottom: 3em;
-}
-
-// Nav
-.menu {
-  opacity: 95%;
-}
-
-.name {
-  color: $black;
-  font-size: 3em;
+  width: 9em;
 }
 
 .open {
   opacity: 0;
   transition: all .2s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-.open-website {
-  transition: all .2s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-img.open {
   width: 300px;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .plus-minus {
@@ -252,23 +129,8 @@ img.open {
   }
 }
 
-.plus-minus li a {
-  color: $white;
-  font-size: 2em;
-}
-
-.savvy {
-  @extend %block;
-  padding: 1em;
-  width: 60%;
-}
-
-// .social {
-//   width: 100px;
-// }
-
 .vertical-text {
-  width: 50px;
+  width: 1em;
   font-family: $stack-staatliches;
   transform: rotate(-50deg);
 }
@@ -300,7 +162,7 @@ img.open {
   height: 500px;
   flex-grow: 1;
   -webkit-filter: grayscale(100%);
-    &:hover {
+  &:hover {
     opacity: 1;
     // filter: none;
     -webkit-filter: grayscale(0%);
@@ -358,17 +220,9 @@ img.open {
   background-image: url('#{$path-img}/ferris-wheel.jpg');
 }
 
-// #imageSampleUniversity {
-//   background-image: url('#{$path-img}/sample-university.jpg');
-// }
-
 #imageFeralBlack {
   background-image: url('#{$path-img}/feral.png');
 }
-
-// #imageFeralWhite {
-//   background-image: url('#{$path-img}/feral-white.png');
-// }
 
 #imageBody {
   background-image: url('#{$path-img}/ux-design.png');
@@ -397,10 +251,6 @@ img.open {
 #imageSpecialist {
   background-image: url('#{$path-img}/hybrid-cloud.png');
 }
-
-// #imageSpecialistBlack {
-//   background-image: url('#{$path-img}/hybrid-cloud-specialist.png');
-// }
 
 // Media Queries
 @media only screen and
@@ -573,19 +423,5 @@ and (max-width: 415px) {
 
   #imageSpecialist {
     background-image: url('#{$path-img}/hybrid-white.png');
-  }
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: auto;
-    height: 100%;
   }
 }

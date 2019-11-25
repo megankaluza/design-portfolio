@@ -3,6 +3,12 @@
   display: flex;
 }
 
+// Font
+%font {
+  font-family: $stack-staatliches;
+  font-variant: small-caps;
+}
+
 // Center
 %centered {
   text-align: center;
