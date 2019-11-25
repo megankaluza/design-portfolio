@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
@@ -20,10 +20,6 @@ h3.signature, #imageFashion,
 #imageSpecialist,
 #imageSpecialistBlack, .menu, .columns, .gallery {
   display: flex; }
-
-h3, .bold {
-  font-family: "Staatliches", cursive;
-  font-variant: small-caps; }
 
 .contact, #footer-title,
 #footer-copy, h3.title, .label {
@@ -95,6 +91,7 @@ h4 {
     width: 100%; }
 
 .landing-footer {
+  font-family: "Odibee Sans", cursive;
   font-size: 2em;
   padding-top: 5em; }
 
@@ -108,15 +105,12 @@ h4 {
 #footer-title,
 #footer-copy {
   color: #FFFFFF;
+  font-family: "Odibee Sans", cursive;
   font-size: 1em;
   margin-top: 1em;
   padding: 1em; }
 
 #footer-copy {
-  font-variant: small-caps; }
-
-#footer-title {
-  font-family: "Staatliches", cursive;
   font-variant: small-caps; }
 
 header {
@@ -247,8 +241,7 @@ header {
   height: 42px;
   line-height: 42px;
   text-align: right;
-  font-family: "Staatliches", cursive;
-  font-variant: small-caps;
+  font-family: "Odibee Sans", cursive;
   opacity: 0;
   transition: opacity 0.3s; }
   .menu li:first-child {
@@ -357,6 +350,7 @@ body {
   width: 100%; }
 
 h3 {
+  font-family: "Odibee Sans", cursive;
   font-size: 2.5em;
   padding: 2em; }
 
@@ -378,7 +372,8 @@ p {
   background-color: #E71D36; }
 
 .bold {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-variant: small-caps; }
 
 .about-me {
   font-size: 1.8em; }
@@ -398,6 +393,10 @@ p {
   padding: 2em 1em;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+
+.hello {
+  width: 13em;
+  padding-left: 1em; }
 
 .grow {
   width: 10%;
@@ -421,10 +420,11 @@ p {
   border: 5px solid #000000;
   width: 690px;
   height: 690px;
-  padding-top: 4em; }
+  padding-top: 1em; }
 
 .logo {
-  width: 9em; }
+  padding-top: 6.5em;
+  width: 10em; }
 
 .open {
   opacity: 0;
@@ -441,7 +441,6 @@ p {
 
 .vertical-text {
   width: 1em;
-  font-family: "Staatliches", cursive;
   transform: rotate(-50deg); }
 
 .white {
@@ -538,7 +537,7 @@ p {
   h3 {
     font-size: 1.8em; }
 
-  img.open {
+  .open {
     width: 200px; }
 
   .content {
@@ -567,7 +566,7 @@ p {
   h4 {
     font-size: 2em; }
 
-  img.open {
+  .open {
     width: 200px; }
 
   .about-me {
@@ -610,6 +609,7 @@ p {
     padding-top: 5.7em; }
 
   .logo {
+    padding-top: 4em;
     width: 5em; }
 
   .menu {
@@ -625,9 +625,7 @@ p {
     font-size: 1.6em; }
 
   .vertical-text {
-    width: 30px;
-    font-family: "Staatliches", cursive;
-    transform: rotate(-50deg); }
+    width: 30px; }
 
   .wrapper {
     margin: 0 auto; }

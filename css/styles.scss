@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 
 // Sass Components
 @import "base/index";
@@ -8,9 +8,8 @@ body {
   width: 100%;
 }
 
-// Typography
 h3 {
-  @extend %font;
+  font-family: $stack-odibee;
   font-size: 2.5em;
   padding: 2em;
 }
@@ -41,8 +40,8 @@ p {
 }
 
 .bold {
-  @extend %font;
   color: $white;
+  font-variant: small-caps;
 }
 
 .about-me {
@@ -67,6 +66,11 @@ p {
   padding: 2em 1em;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
+}
+
+.hello {
+  width: 13em;
+  padding-left: 1em;
 }
 
 // .date {
@@ -105,11 +109,12 @@ p {
   border: 5px solid $black;
   width: 690px;
   height: 690px;
-  padding-top: 4em;
+  padding-top: 1em;
 }
 
 .logo {
-  width: 9em;
+  padding-top: 6.5em;
+  width: 10em;
 }
 
 .open {
@@ -131,7 +136,7 @@ p {
 
 .vertical-text {
   width: 1em;
-  font-family: $stack-staatliches;
+  // font-family: $stack-staatliches;
   transform: rotate(-50deg);
 }
 
@@ -280,7 +285,7 @@ and (max-width: 768px) {
     font-size: 1.8em;
   }
 
-  img.open {
+  .open {
     width: 200px;
   }
 
@@ -321,7 +326,7 @@ and (max-width: 415px) {
     font-size: 2em;
   }
 
-  img.open {
+  .open {
     width: 200px;
   }
 
@@ -374,6 +379,7 @@ and (max-width: 415px) {
   }
 
   .logo {
+    padding-top: 4em;
     width: 5em;
   }
 
@@ -396,8 +402,8 @@ and (max-width: 415px) {
 
   .vertical-text {
     width: 30px;
-    font-family: $stack-staatliches;
-    transform: rotate(-50deg);
+    // font-family: $stack-staatliches;
+    // transform: rotate(-50deg);
   }
 
   .wrapper {
