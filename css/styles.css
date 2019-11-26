@@ -111,7 +111,7 @@ h4 {
   padding: 1em; }
 
 #footer-copy {
-  font-variant: small-caps; }
+  color: #E71D36; }
 
 header {
   position: fixed;
@@ -238,6 +238,7 @@ header {
     color: #E71D36; }
 
 .menu li {
+  padding: 2em;
   height: 42px;
   line-height: 42px;
   text-align: right;
@@ -616,7 +617,8 @@ p {
     height: 100vh; }
 
   .menu li {
-    font-size: 1em; }
+    font-size: 1em;
+    padding: 0; }
 
   .modal {
     width: 100%; }
