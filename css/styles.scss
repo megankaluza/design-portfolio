@@ -199,6 +199,7 @@ p {
 #imageFeralWhite,
 #imageBody,
 #imageDetox,
+#imageOriginals,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -227,7 +228,11 @@ p {
 // }
 
 #imageDetox {
-  background-image: url('#{$path-img}/tasty-detox.png');
+  background-image: url('#{$path-img}/detox.png');
+}
+
+#imageOriginals {
+  background-image: url('#{$path-img}/the-originals.png');
 }
 
 #imageFeralBlack {
@@ -403,14 +408,11 @@ and (max-width: 415px) {
   }
 
   .name {
-    // color: $madder;
     font-size: 1.6em;
   }
 
   .vertical-text {
     width: 30px;
-    // font-family: $stack-staatliches;
-    // transform: rotate(-50deg);
   }
 
   .wrapper {

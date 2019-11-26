@@ -121,6 +121,13 @@ $(document).ready(function(){
     })
     .modal('show');
   });
+  $('#openOriginals').click(function(){
+    $('.originals')
+    .modal({
+      blurring: true
+    })
+    .modal('show');
+  });
   $('#openAesthetic').click(function(){
     $('.aesthetic')
     .modal({
