@@ -100,11 +100,11 @@ h4 {
   padding-top: 1em; }
 
 #footer a:hover {
-  color: #000000; }
+  color: #FFFFFF; }
 
 #footer-title,
 #footer-copy {
-  color: #FFFFFF;
+  color: #000000;
   font-family: "Odibee Sans", cursive;
   font-size: 1em;
   margin-top: 1em;
@@ -334,10 +334,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%); }
+  height: 100%; }
 
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
@@ -372,12 +369,12 @@ p {
 .about {
   background-color: #E71D36; }
 
+.about-me {
+  font-size: 1.8em; }
+
 .bold {
   color: #FFFFFF;
   font-variant: small-caps; }
-
-.about-me {
-  font-size: 1.8em; }
 
 .back a {
   color: #000000;
@@ -424,7 +421,7 @@ p {
   padding-top: 1em; }
 
 .logo {
-  padding-top: 6.5em;
+  padding-top: 6.3em;
   width: 10em; }
 
 .open {
@@ -490,12 +487,6 @@ p {
 
 #imageExodus {
   background-image: url("../img/exodus.png"); }
-
-#imageTerraForma {
-  background-image: url("../img/terra-forma.png"); }
-
-#imageCards {
-  background-image: url("../img/ferris-wheel.jpg"); }
 
 #imageFeralBlack {
   background-image: url("../img/feral.png"); }

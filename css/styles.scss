@@ -39,14 +39,14 @@ p {
   background-color: $madder;
 }
 
-.bold {
-  color: $white;
-  font-variant: small-caps;
-}
-
 .about-me {
   @extend %block;
   font-size: 1.8em;
+}
+
+.bold {
+  color: $white;
+  font-variant: small-caps;
 }
 
 .back a {
@@ -113,7 +113,7 @@ p {
 }
 
 .logo {
-  padding-top: 6.5em;
+  padding-top: 6.3em;
   width: 10em;
 }
 
@@ -217,13 +217,13 @@ p {
   background-image: url('#{$path-img}/exodus.png');
 }
 
-#imageTerraForma {
-  background-image: url('#{$path-img}/terra-forma.png');
-}
+// #imageTerraForma {
+//   background-image: url('#{$path-img}/terra-forma.png');
+// }
 
-#imageCards {
-  background-image: url('#{$path-img}/ferris-wheel.jpg');
-}
+// #imageCards {
+//   background-image: url('#{$path-img}/ferris-wheel.jpg');
+// }
 
 #imageFeralBlack {
   background-image: url('#{$path-img}/feral.png');
