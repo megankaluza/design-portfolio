@@ -12,6 +12,7 @@ h3.signature, #imageFashion,
 #imageFeralBlack,
 #imageFeralWhite,
 #imageBody,
+#imageDetox,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -33,6 +34,7 @@ h3.signature, #imageFashion,
 #imageFeralBlack,
 #imageFeralWhite,
 #imageBody,
+#imageDetox,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -52,6 +54,7 @@ h3.signature, #imageFashion,
 #imageFeralBlack,
 #imageFeralWhite,
 #imageBody,
+#imageDetox,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -477,6 +480,7 @@ p {
 #imageFeralBlack:hover,
 #imageFeralWhite:hover,
 #imageBody:hover,
+#imageDetox:hover,
 #imageTumblr:hover,
 #imageAdidas:hover,
 #imageMobile:hover,
@@ -491,6 +495,9 @@ p {
 
 #imageExodus {
   background-image: url("../img/exodus.png"); }
+
+#imageDetox {
+  background-image: url("../img/tasty-detox.png"); }
 
 #imageFeralBlack {
   background-image: url("../img/feral.png"); }

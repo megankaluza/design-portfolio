@@ -198,6 +198,7 @@ p {
 #imageFeralBlack,
 #imageFeralWhite,
 #imageBody,
+#imageDetox,
 #imageTumblr,
 #imageAdidas,
 #imageMobile,
@@ -225,9 +226,9 @@ p {
 //   background-image: url('#{$path-img}/terra-forma.png');
 // }
 
-// #imageCards {
-//   background-image: url('#{$path-img}/ferris-wheel.jpg');
-// }
+#imageDetox {
+  background-image: url('#{$path-img}/tasty-detox.png');
+}
 
 #imageFeralBlack {
   background-image: url('#{$path-img}/feral.png');

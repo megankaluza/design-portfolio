@@ -114,6 +114,13 @@ $(document).ready(function(){
     })
     .modal('show');
   });
+  $('#openDetox').click(function(){
+    $('.detox')
+    .modal({
+      blurring: true
+    })
+    .modal('show');
+  });
   $('#openAesthetic').click(function(){
     $('.aesthetic')
     .modal({
