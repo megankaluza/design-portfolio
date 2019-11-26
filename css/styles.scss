@@ -134,9 +134,13 @@ p {
   }
 }
 
+.social {
+  margin: 8px;
+  width: 2em;
+}
+
 .vertical-text {
   width: 1em;
-  // font-family: $stack-staatliches;
   transform: rotate(-50deg);
 }
 
@@ -379,7 +383,7 @@ and (max-width: 415px) {
   }
 
   .logo {
-    padding-top: 4em;
+    padding-top: 3.9em;
     width: 5em;
   }
 

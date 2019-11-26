@@ -437,6 +437,10 @@ p {
     color: #FFFFFF;
     font-size: 2em; }
 
+.social {
+  margin: 8px;
+  width: 2em; }
+
 .vertical-text {
   width: 1em;
   transform: rotate(-50deg); }
@@ -601,7 +605,7 @@ p {
     padding-top: 5.7em; }
 
   .logo {
-    padding-top: 4em;
+    padding-top: 3.9em;
     width: 5em; }
 
   .menu {
