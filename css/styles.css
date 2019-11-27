@@ -99,7 +99,7 @@ h4 {
 .landing-footer {
   font-family: "Odibee Sans", cursive;
   font-size: 2em;
-  padding-top: 5em; }
+  padding-top: 5.3em; }
 
 #footer {
   font-size: 1.5em;
@@ -117,7 +117,7 @@ h4 {
   padding: 1em; }
 
 #footer-copy {
-  color: #E71D36; }
+  color: #FFFFFF; }
 
 header {
   position: fixed;
@@ -616,7 +616,7 @@ p {
 
   .landing-footer {
     font-size: 18px;
-    padding-top: 5.7em; }
+    padding-top: 6em; }
 
   .logo {
     padding-top: 3.9em;
