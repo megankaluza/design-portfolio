@@ -321,6 +321,7 @@ header {
   height: 100%; }
 
 .content-block {
+  font-size: 1.2em;
   padding: 1em;
   width: 375px; }
 
