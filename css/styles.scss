@@ -86,10 +86,6 @@ p {
 }
 
 .label {
-  // @extend %centered;
-  // background: $silver;
-  background-repeat: no-repeat;
-  background-position: bottom right;
   a {
     color: $black;
   }
@@ -364,6 +360,11 @@ and (max-width: 415px) {
 
   .fullscreen-bg__video {
     display: none;
+  }
+
+  .fscreen {
+    height: 105vh;
+    // padding: 1em;
   }
 
   .gallery .box {
