@@ -5,39 +5,6 @@ ScrollReveal().reveal('.revealTwo', { delay: 600 });
 ScrollReveal().reveal('.revealThree', { delay: 800 });
 ScrollReveal().reveal('.revealFour', { delay: 1000 });
 
-//Time and Date Stamp
-// var MONTH_NAME = ['January', 'Febuary', 'March', 'April', 'May', 'June',
-// 'July', 'August', 'September', 'October', 'November', 'December'];
-// function showTime() {
-//   function twoDigit(n) {
-//     return ('0' + n).slice(-2);
-//   }
-//   function iso8601(date) {
-//     return date.getFullYear() +
-//     '-' + twoDigit(1 + date.getMonth()) +
-//     '-' + twoDigit(date.getDate()) +
-//     'T' + twoDigit(date.getHours()) +
-//     ':' + twoDigit(date.getMinutes());
-//   }
-//   function en_US(date) {
-//     var h = date.getHours() % 12;
-//     return MONTH_NAME[date.getMonth()] +
-//     ' '  + date.getDate() +
-//     ', ' + date.getFullYear() +
-//     '<br />' + (h == 0 ? 12 : h) +
-//     ':'  + twoDigit(date.getMinutes()) +
-//     ' ' + (date.getHours() < 12 ? 'am' : 'pm');
-//   }
-//
-//   var timeEl = document.getElementById('time');
-//   if (timeEl !== null) {
-//     var now = new Date();
-//     timeEl.innerHTML = en_US(now);
-//     timeDiv.setAttribute('datetime', iso8601(now));
-//   }
-// };
-// setInterval(showTime, 1000);
-
 $(document).ready(function(){
   //Smooth Scrolling
   $('a[href*="#"]:not([href="#"])').click(function() {
