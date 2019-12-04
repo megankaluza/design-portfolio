@@ -3,11 +3,33 @@
   @extend %centered;
 }
 
+.contact-footer {
+  font-size: 1.2em;
+  padding-top: 8.2em;
+}
+
 .landing-footer {
   font-family: $stack-odibee;
   font-size: 2em;
   padding-top: 5.3em;
 }
+
+#nav-title {
+  text-align: right;
+  // position: fixed;
+  color: $black;
+  font-family: $stack-odibee;
+  font-size: 2em;
+  padding: 2em;
+}
+
+#nav-title a {
+  color: $black;
+  &:hover{
+    color: $white;
+  }
+}
+
 
 #footer {
   font-size: 1.5em;
@@ -20,7 +42,6 @@
   }
 }
 
-
 #footer-title,
 #footer-copy {
   @extend %centered;
@@ -32,5 +53,5 @@
 }
 
 #footer-copy {
-  color: $white;
+  color: $black;
 }

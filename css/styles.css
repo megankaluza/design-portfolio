@@ -24,7 +24,7 @@ h3.signature, #imageFashion,
   display: flex; }
 
 .contact, #footer-title,
-#footer-copy, h3.title, .label {
+#footer-copy, h3.title {
   text-align: center; }
 
 #imageFashion,
@@ -96,10 +96,26 @@ h4 {
     margin: 0 auto;
     width: 100%; }
 
+.contact-footer {
+  font-size: 1.2em;
+  padding-top: 8.2em; }
+
 .landing-footer {
   font-family: "Odibee Sans", cursive;
   font-size: 2em;
   padding-top: 5.3em; }
+
+#nav-title {
+  text-align: right;
+  color: #000000;
+  font-family: "Odibee Sans", cursive;
+  font-size: 2em;
+  padding: 2em; }
+
+#nav-title a {
+  color: #000000; }
+  #nav-title a:hover {
+    color: #FFFFFF; }
 
 #footer {
   font-size: 1.5em;
@@ -117,7 +133,7 @@ h4 {
   padding: 1em; }
 
 #footer-copy {
-  color: #FFFFFF; }
+  color: #000000; }
 
 header {
   position: fixed;
@@ -313,7 +329,7 @@ header {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   padding-top: 5em;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
@@ -373,13 +389,13 @@ p {
   padding: 1.5em; }
 
 .about {
-  background-color: #E71D36; }
+  background-color: #FFFFFF; }
 
 .about-me {
   font-size: 1.8em; }
 
 .bold {
-  color: #FFFFFF;
+  color: #E71D36;
   font-variant: small-caps; }
 
 .back a {
@@ -412,13 +428,12 @@ p {
   width: 90%; }
 
 .label {
-  background: #c0c0c0;
   background-repeat: no-repeat;
   background-position: bottom right; }
   .label a {
-    color: #FFFFFF; }
+    color: #000000; }
   .label h3 {
-    color: #FFFFFF; }
+    color: #000000; }
 
 .landing-content {
   border: 5px solid #000000;
@@ -473,7 +488,8 @@ p {
     -webkit-filter: grayscale(0%); }
 
 .gallery {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 3em; }
 
 #imageFashion:hover,
 #imageExodus:hover,
