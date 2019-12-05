@@ -97,7 +97,8 @@ h4 {
     width: 100%; }
 
 .contact-footer {
-  font-size: 1.2em; }
+  font-size: 1em;
+  padding-top: 10.8em; }
 
 .landing-footer {
   font-family: "Odibee Sans", cursive;
@@ -105,11 +106,13 @@ h4 {
   padding-top: 5.3em; }
 
 #nav-title {
-  text-align: right;
+  width: 100px;
+  position: fixed;
   color: #000000;
   font-family: "Odibee Sans", cursive;
   font-size: 2em;
-  padding: 2em; }
+  padding: 2em;
+  right: 50px; }
 
 #nav-title a {
   color: #000000; }
@@ -135,7 +138,6 @@ h4 {
   color: #000000; }
 
 header {
-  position: fixed;
   position: absolute;
   width: 100vw;
   left: 0;
@@ -321,16 +323,16 @@ header {
   height: 100%; }
 
 .content-block {
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 1em;
-  width: 375px; }
+  width: 360px; }
 
 .fscreen {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  padding-top: 5em;
+  padding-top: 3em;
   animation: slide-title-in 2000ms 1 alternate forwards;
   -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
 
@@ -388,24 +390,20 @@ h3.title {
 p {
   padding: 1.5em; }
 
-.about {
-  background-color: #FFFFFF; }
-
 .about-me {
-  font-size: 1.8em; }
+  font-size: 1.7em; }
 
 .bold {
   color: #E71D36;
   font-variant: small-caps; }
 
-.back a {
-  color: #000000;
-  font-size: 3em;
-  position: fixed;
-  right: 2em;
-  top: 50%;
-  left: 5%;
-  z-index: 100; }
+.cursive {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8em; }
+
+.underline {
+  font-weight: bold;
+  text-decoration: underline; }
 
 .content-section {
   position: relative;
@@ -463,9 +461,6 @@ p {
   width: 1em;
   transform: rotate(-50deg); }
 
-.white {
-  background-color: #FFFFFF; }
-
 .column {
   width: 200px;
   border: 5px solid #FFFFFF;
@@ -486,7 +481,7 @@ p {
 
 .gallery {
   flex-wrap: wrap;
-  margin: 3em; }
+  margin: 2em; }
 
 #imageFashion:hover,
 #imageExodus:hover,
@@ -554,6 +549,9 @@ p {
     align-items: center;
     justify-content: center; }
 
+  .gallery {
+    margin: 0; }
+
   .menu {
     height: 100vh; } }
 @media only screen and (min-width: 667px) and (max-width: 768px) {
@@ -572,6 +570,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+  .gallery {
+    margin: 0; }
 
   .menu {
     height: 100vh; }
@@ -619,6 +620,9 @@ p {
 
   .fscreen {
     height: 105vh; }
+
+  .gallery {
+    margin: 0; }
 
   .gallery .box {
     width: 100%;
