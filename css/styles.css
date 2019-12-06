@@ -97,8 +97,8 @@ h4 {
     width: 100%; }
 
 .contact-footer {
-  font-size: 1em;
-  padding-top: 10.8em; }
+  font-size: 1.2em;
+  padding-top: 8.3em; }
 
 .landing-footer {
   font-family: "Odibee Sans", cursive;
@@ -324,8 +324,7 @@ header {
 
 .content-block {
   font-size: 1em;
-  padding: 1em;
-  width: 360px; }
+  width: 350px; }
 
 .fscreen {
   position: relative;
@@ -610,10 +609,16 @@ p {
     align-items: center;
     justify-content: center; }
 
+  .content-block {
+    padding: .5em; }
+
   .content-section {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+  .contact-footer {
+    padding-top: 5em; }
 
   .fullscreen-bg__video {
     display: none; }
@@ -665,7 +670,7 @@ p {
     padding: 5px; }
 
   #landing-page {
-    background-color: #1496ED; }
+    background-color: #FFFFFF; }
 
   #imageInsta {
     background-image: url("../img/ig-mobile.png"); }

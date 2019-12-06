@@ -371,10 +371,18 @@ and (max-width: 415px) {
     justify-content: center;
   }
 
+  .content-block {
+    padding: .5em;
+  }
+
   .content-section {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .contact-footer {
+    padding-top: 5em;
   }
 
   .fullscreen-bg__video {
@@ -443,7 +451,7 @@ and (max-width: 415px) {
   }
 
   #landing-page {
-    background-color: $blue;
+    background-color: $white;
   }
 
   //Images
