@@ -14,6 +14,20 @@
   padding-top: 5.3em;
 }
 
+.work-links {
+  @extend %centered;
+  color: $black;
+  font-family: $stack-odibee;
+  font-size: 2em;
+  margin: 2em;
+  a {
+    color: $black;
+    &:hover {
+      color: $madder;
+    }
+  }
+}
+
 #nav-title {
   width: 100px;
   position: fixed;

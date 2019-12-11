@@ -23,7 +23,7 @@ h3.signature, #imageFashion,
 #imageSpecialistBlack, .menu, .columns, .gallery {
   display: flex; }
 
-.contact, #footer-title,
+.contact, .work-links, #footer-title,
 #footer-copy, h3.title {
   text-align: center; }
 
@@ -104,6 +104,16 @@ h4 {
   font-family: "Odibee Sans", cursive;
   font-size: 2em;
   padding-top: 5.3em; }
+
+.work-links {
+  color: #000000;
+  font-family: "Odibee Sans", cursive;
+  font-size: 2em;
+  margin: 2em; }
+  .work-links a {
+    color: #000000; }
+    .work-links a:hover {
+      color: #E71D36; }
 
 #nav-title {
   width: 100px;
@@ -358,9 +368,9 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-filter: grayscale(70%);
+  -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(70%); }
+  filter: grayscale(100%); }
 
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
