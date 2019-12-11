@@ -1,9 +1,9 @@
 //Scroll Reveal
 ScrollReveal({ reset: true });
 ScrollReveal().reveal('.revealOne', { delay: 400 });
-ScrollReveal().reveal('.revealTwo', { delay: 600 });
-ScrollReveal().reveal('.revealThree', { delay: 800 });
-ScrollReveal().reveal('.revealFour', { delay: 1000 });
+ScrollReveal().reveal('.revealTwo', { delay: 800 });
+ScrollReveal().reveal('.revealThree', { delay: 1200 });
+ScrollReveal().reveal('.revealFour', { delay: 1600 });
 
 $(document).ready(function(){
   //Smooth Scrolling
