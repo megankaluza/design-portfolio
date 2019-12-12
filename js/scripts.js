@@ -1,10 +1,11 @@
 //Scroll Reveal
-ScrollReveal({ reset: true });
-ScrollReveal().reveal('.revealOne', { delay: 400 });
+ScrollReveal({ reset: 200 });
+ScrollReveal().reveal('.revealOne', { delay: 100 });
 ScrollReveal().reveal('.revealTwo', { delay: 800 });
-ScrollReveal().reveal('.revealThree', { delay: 1200 });
-ScrollReveal().reveal('.revealFour', { delay: 1600 });
-// 
+ScrollReveal().reveal('.revealThree', { delay: 1600 });
+ScrollReveal().reveal('.revealFour', { delay: 2400 });
+
+//
 // $(document).ready(function(){
 //   //Smooth Scrolling
 //   $('a[href*="#"]:not([href="#"])').click(function() {

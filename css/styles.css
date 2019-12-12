@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap|Sacramento");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-h3.signature, #imageFashion,
+h1, h3.signature, #imageFashion,
 #imageExodus,
 #imageTerraForma,
 #imageCards,
@@ -48,7 +48,7 @@ h3.signature, #imageFashion,
   background-position: top;
   background-repeat: no-repeat; }
 
-h3.signature, #imageFashion,
+h1, h3.signature, #imageFashion,
 #imageExodus,
 #imageTerraForma,
 #imageCards,
@@ -98,7 +98,7 @@ h4 {
 
 .contact-footer {
   font-size: 1.2em;
-  padding-top: 8.3em; }
+  padding-top: 6.3em; }
 
 .landing-footer {
   font-family: "Odibee Sans", cursive;
@@ -383,6 +383,13 @@ header {
 body {
   width: 100%; }
 
+h1 {
+  font-family: "Sacramento", cursive; }
+  h1 a {
+    color: #000000; }
+    h1 a:hover {
+      color: #E71D36; }
+
 h3 {
   font-family: "Odibee Sans", cursive;
   font-size: 2.5em;
@@ -623,7 +630,9 @@ p {
     justify-content: center; }
 
   .content-block {
-    padding: .5em; }
+    font-size: .8em;
+    padding: .5em;
+    width: 22em; }
 
   .content-section {
     display: flex;
@@ -632,7 +641,7 @@ p {
 
   .contact-footer {
     font-size: .8em;
-    padding-top: 9.1em; }
+    padding-top: 6em; }
 
   .fullscreen-bg__video {
     display: none; }

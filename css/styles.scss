@@ -1,11 +1,22 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap|Sacramento');
 
 // Sass Components
 @import "base/index";
 
 body {
   width: 100%;
+}
+
+h1 {
+  @extend %align;
+  font-family: $stack-sacramento;
+  a {
+    color: $black;
+    &:hover {
+      color: $madder;
+    }
+  }
 }
 
 h3 {
@@ -372,7 +383,9 @@ and (max-width: 415px) {
   }
 
   .content-block {
+    font-size: .8em;
     padding: .5em;
+    width: 22em;
   }
 
   .content-section {
@@ -383,7 +396,7 @@ and (max-width: 415px) {
 
   .contact-footer {
     font-size: .8em;
-    padding-top: 9.1em;
+    padding-top: 6em;
   }
 
   .fullscreen-bg__video {
