@@ -27,6 +27,7 @@ h3 {
 
 h3 a {
   color: $black;
+  text-decoration: underline;
   &:hover {
     color: $madder;
   }
@@ -182,11 +183,12 @@ p {
   width: 25%;
   height: 500px;
   flex-grow: 1;
-  -webkit-filter: grayscale(100%);
+  // -webkit-filter: grayscale(100%);
   &:hover {
-    opacity: 1;
+    // opacity: 1;
     // filter: none;
-    -webkit-filter: grayscale(0%);
+    // -webkit-filter: grayscale(0%);
+    -webkit-filter: opacity(10%);
   }
 }
 
