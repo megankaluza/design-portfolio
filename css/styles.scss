@@ -5,16 +5,17 @@
 @import "base/index";
 
 body {
+  background-color: $off;
   width: 100%;
 }
 
 h1 {
   @extend %align;
-  font-family: $stack-sacramento;
+  font-family: $stack-odibee;
   a {
     color: $black;
     &:hover {
-      color: $madder;
+      color: $white;
     }
   }
 }
@@ -29,7 +30,7 @@ h3 a {
   color: $black;
   text-decoration: underline;
   &:hover {
-    color: $madder;
+    color: $white;
   }
 }
 
@@ -41,6 +42,13 @@ h3.signature {
 h3.title {
   @extend %centered;
   padding: .5em;
+}
+
+h4 {
+  color: $black;
+  font-size: 4em;
+  font-family: $stack-odibee;
+  padding: 1em;
 }
 
 p {
@@ -57,8 +65,8 @@ p {
 }
 
 .bold {
-  color: $madder;
-  font-variant: small-caps;
+  color: $rose;
+  // font-variant: small-caps;
 }
 
 .cursive {
@@ -183,7 +191,10 @@ p {
   width: 25%;
   height: 500px;
   flex-grow: 1;
+  // padding: 5em;
+  // border: 1px solid #000;
   // -webkit-filter: grayscale(100%);
+
   &:hover {
     // opacity: 1;
     // filter: none;
@@ -205,6 +216,8 @@ p {
   // }
 }
 
+#imageDreamer,
+#imageFlyer,
 #imageFashion,
 #imageExodus,
 #imageTerraForma,
@@ -230,9 +243,13 @@ p {
   }
 }
 
-#imageFashion {
-  background-image: url('#{$path-img}/eyelashes.jpg');
+#imageDreamer {
+  background-image: url('#{$path-img}/pink-dreamers.png');
 }
+
+// #imageFashion {
+//   background-image: url('#{$path-img}/eyelashes.jpg');
+// }
 
 #imageExodus {
   background-image: url('#{$path-img}/exodus.png');
@@ -251,11 +268,11 @@ p {
 }
 
 #imageFeralBlack {
-  background-image: url('#{$path-img}/feral.png');
+  background-image: url('#{$path-img}/feral-white.png');
 }
 
 #imageBody {
-  background-image: url('#{$path-img}/ux-design.png');
+  background-image: url('#{$path-img}/body-cover.png');
 }
 
 #imageTumblr {
@@ -279,7 +296,11 @@ p {
 }
 
 #imageSpecialist {
-  background-image: url('#{$path-img}/hybrid-cloud.png');
+  background-image: url('#{$path-img}/hybrid-cloud-specialist.png');
+}
+
+#imageFlyer {
+  background-image: url('#{$path-img}/kambo-cover.png');
 }
 
 // Media Queries
@@ -378,6 +399,10 @@ and (max-width: 415px) {
     display: block;
   }
 
+  .contact {
+    font-size: .5em;
+  }
+
   .content {
     display: flex;
     align-items: center;
@@ -386,7 +411,8 @@ and (max-width: 415px) {
 
   .content-block {
     font-size: .8em;
-    padding: .5em;
+    // padding: .5em;
+    padding: 1em;
     width: 22em;
   }
 
@@ -406,8 +432,10 @@ and (max-width: 415px) {
   }
 
   .fscreen {
-    height: 105vh;
+    // display: none;
+    // height: 105vh;
     // padding: 1em;
+    // margin: 1em;
   }
 
   .gallery {
@@ -421,14 +449,13 @@ and (max-width: 415px) {
   }
 
   .landing-content {
-    border: 2px solid $black;
-    width: 300px;
-    height: 550px;
+    border: none;
+    padding-top: 1em;
   }
 
   .landing-footer {
     font-size: 18px;
-    padding-top: 6em;
+    // padding-top: 6em;
   }
 
   .logo {
@@ -445,6 +472,9 @@ and (max-width: 415px) {
     padding: 0;
   }
 
+  .mobile {
+    padding-top: 5em;
+  }
 
   .modal {
     width: 100%;
@@ -461,6 +491,7 @@ and (max-width: 415px) {
   .wrapper {
     margin: 0 auto;
   }
+
 
   #footer-title {
     padding: 5px;

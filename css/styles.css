@@ -4,7 +4,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   box-sizing: border-box; }
 
-h1, h3.signature, #imageFashion,
+h1, h3.signature, #imageDreamer,
+#imageFlyer,
+#imageFashion,
 #imageExodus,
 #imageTerraForma,
 #imageCards,
@@ -27,6 +29,8 @@ h1, h3.signature, #imageFashion,
 #footer-copy, h3.title {
   text-align: center; }
 
+#imageDreamer,
+#imageFlyer,
 #imageFashion,
 #imageExodus,
 #imageTerraForma,
@@ -48,7 +52,9 @@ h1, h3.signature, #imageFashion,
   background-position: top;
   background-repeat: no-repeat; }
 
-h1, h3.signature, #imageFashion,
+h1, h3.signature, #imageDreamer,
+#imageFlyer,
+#imageFashion,
 #imageExodus,
 #imageTerraForma,
 #imageCards,
@@ -69,7 +75,7 @@ h1, h3.signature, #imageFashion,
   justify-content: center; }
 
 .hamburger, .hamburger span, .hamburger span::before,
-.hamburger span::after, .case-study, .content-block, .fscreen, .about-me, .content-section, .landing-content {
+.hamburger span::after, .case-study, .content-block, .about-me, .content-section, .landing-content {
   display: block;
   margin: 0 auto; }
 
@@ -314,13 +320,7 @@ header {
   width: 350px; }
 
 .fscreen {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  padding-top: 3em;
-  animation: slide-title-in 2000ms 1 alternate forwards;
-  -webkit-animation: slide-title-in 2000ms 1 alternate forwards; }
+  margin-bottom: 3em; }
 
 .margin {
   margin-bottom: 1em; }
@@ -355,14 +355,15 @@ header {
     width: auto;
     height: 100%; } }
 body {
+  background-color: #fbf9f4;
   width: 100%; }
 
 h1 {
-  font-family: "Sacramento", cursive; }
+  font-family: "Odibee Sans", cursive; }
   h1 a {
     color: #000000; }
     h1 a:hover {
-      color: #E71D36; }
+      color: #FFFFFF; }
 
 h3 {
   font-family: "Odibee Sans", cursive;
@@ -373,13 +374,19 @@ h3 a {
   color: #000000;
   text-decoration: underline; }
   h3 a:hover {
-    color: #E71D36; }
+    color: #FFFFFF; }
 
 h3.signature {
   font-size: 2em; }
 
 h3.title {
   padding: .5em; }
+
+h4 {
+  color: #000000;
+  font-size: 4em;
+  font-family: "Odibee Sans", cursive;
+  padding: 1em; }
 
 p {
   padding: 1.5em; }
@@ -388,8 +395,7 @@ p {
   font-size: 1.7em; }
 
 .bold {
-  color: #E71D36;
-  font-variant: small-caps; }
+  color: #c37175; }
 
 .cursive {
   font-family: 'Great Vibes', cursive;
@@ -475,6 +481,8 @@ p {
   flex-wrap: wrap;
   margin: 2em; }
 
+#imageDreamer:hover,
+#imageFlyer:hover,
 #imageFashion:hover,
 #imageExodus:hover,
 #imageTerraForma:hover,
@@ -494,8 +502,8 @@ p {
 #imageSpecialistBlack:hover {
   opacity: 1; }
 
-#imageFashion {
-  background-image: url("../img/eyelashes.jpg"); }
+#imageDreamer {
+  background-image: url("../img/pink-dreamers.png"); }
 
 #imageExodus {
   background-image: url("../img/exodus.png"); }
@@ -507,10 +515,10 @@ p {
   background-image: url("../img/the-originals.png"); }
 
 #imageFeralBlack {
-  background-image: url("../img/feral.png"); }
+  background-image: url("../img/feral-white.png"); }
 
 #imageBody {
-  background-image: url("../img/ux-design.png"); }
+  background-image: url("../img/body-cover.png"); }
 
 #imageTumblr {
   background-image: url("../img/tumblr.jpg"); }
@@ -528,7 +536,10 @@ p {
   background-image: url("../img/ig.png"); }
 
 #imageSpecialist {
-  background-image: url("../img/hybrid-cloud.png"); }
+  background-image: url("../img/hybrid-cloud-specialist.png"); }
+
+#imageFlyer {
+  background-image: url("../img/kambo-cover.png"); }
 
 @media only screen and (min-width: 1024px) and (max-width: 1025px) {
   .content {
@@ -597,6 +608,9 @@ p {
   .block {
     display: block; }
 
+  .contact {
+    font-size: .5em; }
+
   .content {
     display: flex;
     align-items: center;
@@ -604,7 +618,7 @@ p {
 
   .content-block {
     font-size: .8em;
-    padding: .5em;
+    padding: 1em;
     width: 22em; }
 
   .content-section {
@@ -619,9 +633,6 @@ p {
   .fullscreen-bg__video {
     display: none; }
 
-  .fscreen {
-    height: 105vh; }
-
   .gallery {
     margin: 0; }
 
@@ -631,13 +642,11 @@ p {
     background-size: contain; }
 
   .landing-content {
-    border: 2px solid #000000;
-    width: 300px;
-    height: 550px; }
+    border: none;
+    padding-top: 1em; }
 
   .landing-footer {
-    font-size: 18px;
-    padding-top: 6em; }
+    font-size: 18px; }
 
   .logo {
     padding-top: 3.9em;
@@ -649,6 +658,9 @@ p {
   .menu li {
     font-size: 1em;
     padding: 0; }
+
+  .mobile {
+    padding-top: 5em; }
 
   .modal {
     width: 100%; }
