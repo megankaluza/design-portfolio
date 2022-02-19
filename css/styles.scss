@@ -90,6 +90,16 @@ p {
 //   z-index: 100;
 // }
 
+// .about-content {
+//   @extend %block;
+//   position: relative;
+//   min-height: 100vh;
+//   padding: 2em 1em;
+//   width: 800px;
+//   animation: slide-title-in 2000ms 1 alternate forwards;
+//   -webkit-animation: slide-title-in 2000ms 1 alternate forwards;
+// }
+
 .content-section {
   @extend %block;
   position: relative;
