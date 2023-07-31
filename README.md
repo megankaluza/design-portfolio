@@ -13,7 +13,7 @@ _Objectives_
 
 ## Setup/Installation Requirements
 
-* _mkaluza.com_
+* _megankaluza.com_
 * _Check out the GitHub Pages: https://megankaluza.github.io/design-portfolio/_
 * _Clone this repository https://github.com/megankaluza/design-portfolio.git_
 * _gem install sass_
